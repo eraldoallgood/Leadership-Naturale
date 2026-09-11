@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<!-- Google tag (gtag.js) - GA4 + Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6NWZEQ8FKL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6NWZEQ8FKL');
+  gtag('config', 'AW-17553141674');
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1958492354925104');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1958492354925104&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership Naturale — Valle Benedetta Retreat Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #EFE6D6;
+    --paper-2: #E4DFCB;
+    --ink: #2B2318;
+    --ink-soft: #5B5140;
+    --terracotta: #831718;
+    --terracotta-dark: #631010;
+    --olive: #454F32;
+    --olive-light: #6C7752;
+    --gold: #C4893A;
+    --line: rgba(43,35,24,0.16);
+    --paper-rgb: 239,230,214;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Mulish', sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+
+  h1,h2,h3{
+    font-family:'Libre Baskerville', serif;
+    font-weight:500;
+    margin:0;
+    color:var(--ink);
+    letter-spacing:-0.01em;
+  }
+
+  .wrap{
+    max-width:1140px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  /* ---------- BUTTONS ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 30px;
+    border-radius:2px;
+    font-family:'Mulish', sans-serif;
+    font-size:15px;
+    font-weight:500;
+    text-decoration:none;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--terracotta);color:#FBF4E8;}
+  .btn-primary:hover{background:var(--terracotta-dark);}
+  .btn-outline{background:transparent;border-color:currentColor;color:var(--ink);}
+  .btn-outline:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .btn-outline.on-dark{color:#FBF4E8;}
+  .btn-outline.on-dark:hover{background:#FBF4E8;color:var(--terracotta-dark);}
+  .btn-small{padding:11px 22px;font-size:14px;}
+
+  .section-cta{text-align:center;margin-top:36px;}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(var(--paper-rgb),0.94);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    position:relative;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 32px;max-width:1140px;margin:0 auto;
+  }
+  .logo-mark img{height:36px;width:auto;display:block;}
+  .nav-links{display:flex;gap:36px;font-size:14.5px;}
+  .nav-links a{
+    text-decoration:none;color:var(--ink-soft);
+    padding-bottom:4px;border-bottom:1px solid transparent;
+    transition:color 0.2s ease, border-color 0.2s ease;
+  }
+  .nav-links a:hover{color:var(--ink);border-bottom-color:var(--terracotta);}
+  .nav-cta{display:flex;align-items:center;gap:18px;}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;}
+
+  @media(max-width:880px){
+    .nav-links{
+      position:fixed;inset:60px 0 auto 0;background:var(--paper);
+      flex-direction:column;gap:0;padding:8px 32px 20px;
+      border-bottom:1px solid var(--line);
+      transform:translateY(-8px);opacity:0;pointer-events:none;
+      transition:opacity 0.2s ease, transform 0.2s ease;
+    }
+    .nav-links.open{opacity:1;transform:translateY(0);pointer-events:auto;}
+    .nav-links a{padding:12px 0;border-bottom:1px solid var(--line);}
+    .nav-links a:last-child{border-bottom:none;}
+    .nav-toggle{display:block;}
+    .nav-cta .btn-small{padding:9px 16px;font-size:13px;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    color:#FBF4E8;
+  }
+  .hero-bg{
+    position:absolute;inset:0;
+    width:100%;height:100%;
+    object-fit:cover;
+    object-position:72% center;
+    z-index:0;
+  }
+  .hero-overlay{
+    position:absolute;inset:0;z-index:1;
+    background:
+      linear-gradient(180deg, rgba(15,10,6,0.18) 0%, rgba(15,10,6,0.42) 55%, rgba(15,10,6,0.8) 100%),
+      linear-gradient(100deg, rgba(15,10,6,0.95) 0%, rgba(15,10,6,0.86) 32%, rgba(15,10,6,0.35) 62%, rgba(15,10,6,0.05) 85%);
+  }
+  .hero-copy{
+    position:relative;z-index:2;
+    padding:0 5vw;
+    margin-left:4vw;
+    max-width:clamp(560px, 46vw, 860px);
+    text-shadow:0 1px 4px rgba(0,0,0,0.3);
+  }
+  .hero-copy h1{
+    color:#FBF4E8;
+    font-size:clamp(32px,4vw,54px);
+    line-height:1.1;
+  }
+  .hero-copy p.dek{
+    margin-top:18px;font-size:17px;color:#E7DFCE;max-width:60ch;
+  }
+  .teacher-chip{
+    display:inline-flex;align-items:center;gap:10px;
+    margin-top:20px;
+    text-decoration:none;
+    color:#FBF4E8;
+    font-size:14px;
+  }
+  .teacher-chip img{
+    width:34px;height:34px;border-radius:50%;object-fit:cover;
+    border:1px solid rgba(251,244,232,0.5);
+  }
+  .teacher-chip span{color:#D8CFBB;}
+  .teacher-chip b{font-weight:500;}
+  .hero-meta{
+    margin-top:24px;display:flex;flex-wrap:wrap;gap:22px;font-size:14px;
+    color:#EFE6D6;
+  }
+  .hero-meta div{padding-left:14px;border-left:2px solid var(--gold);}
+  .hero-meta b{display:block;font-family:'Libre Baskerville',serif;font-weight:500;font-size:15px;color:#FBF4E8;}
+  .hero-actions{display:flex;gap:16px;margin-top:28px;flex-wrap:wrap;}
+
+  @media(max-width:900px){
+    .hero{min-height:78vh;align-items:flex-end;}
+    .hero-copy{padding:48px 24px 40px;margin-left:0;max-width:none;}
+    .hero-bg{object-position:60% center;}
+  }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{padding:72px 0;}
+  section.tight{padding:56px 0;}
+  .section-head{max-width:900px;margin-bottom:52px;}
+  .section-head .eyebrow{
+    font-size:14px;color:var(--terracotta-dark);margin-bottom:14px;
+    font-family:'Libre Baskerville',serif;font-style:italic;
+  }
+  .section-head h2{font-size:clamp(28px,3.2vw,38px);line-height:1.15;}
+  .section-head p.lede{margin-top:18px;font-size:17px;color:var(--ink-soft);max-width:none;}
+  #contesto .section-head{max-width:none;}
+  .bg-paper2{background:var(--paper-2);}
+  .bg-ink{background:var(--ink);color:#EFE6D6;}
+  .bg-ink h2,.bg-ink h3{color:#FBF4E8;}
+  .bg-ink .section-head p.lede{color:#C9BFA9;}
+
+  /* ---------- REFLECTION ---------- */
+  .reflection{max-width:720px;margin:0 auto;text-align:center;padding:76px 32px 40px;}
+  .reflection p{
+    font-family:'Libre Baskerville', serif;font-size:clamp(19px,2.2vw,24px);
+    font-weight:400;font-style:italic;line-height:1.55;color:var(--ink);
+  }
+
+  /* ---------- FACTS STRIP ---------- */
+  .facts{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .fact{padding:30px 24px;border-left:1px solid var(--line);}
+  .fact:first-child{border-left:none;}
+  .fact .label{font-size:12.5px;color:var(--ink-soft);}
+  .fact .value{font-family:'Libre Baskerville',serif;font-size:17px;margin-top:6px;line-height:1.35;}
+  @media(max-width:900px){
+    .facts{grid-template-columns:repeat(2,1fr);}
+    .fact{border-left:none;border-top:1px solid var(--line);}
+    .fact:nth-child(odd){border-right:1px solid var(--line);}
+  }
+
+  /* ---------- SPLIT ---------- */
+  .split{display:grid;grid-template-columns:0.95fr 1.05fr;gap:64px;align-items:center;}
+  .split.reverse{grid-template-columns:1.05fr 0.95fr;}
+  .split.reverse .split-media{order:2;}
+  .split-media{position:relative;width:100%;aspect-ratio:5/4;overflow:hidden;border-radius:2px;}
+  .split-media img{width:100%;height:100%;object-fit:cover;display:block;}
+  .split-text p{margin:0 0 18px;color:var(--ink-soft);font-size:16.5px;max-width:none;}
+  .split-text p:last-child{margin-bottom:0;}
+  @media(max-width:900px){
+    .split,.split.reverse{grid-template-columns:1fr;gap:32px;}
+    .split.reverse .split-media{order:0;}
+    .split-media{aspect-ratio:4/3;}
+  }
+
+  /* ---------- LIST GRID ---------- */
+  .practice-list{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;max-width:900px;}
+  .practice-list li{list-style:none;display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--line);font-size:16px;}
+  .practice-list li:nth-last-child(-n+1){border-bottom:1px solid var(--line);}
+  .practice-list .mark{flex:none;width:9px;height:9px;border-radius:50%;background:var(--gold);margin-top:8px;}
+  @media(max-width:700px){.practice-list{grid-template-columns:1fr;}}
+
+  /* ---------- FOOD STRIP ---------- */
+  .food{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:0;min-height:440px;}
+  .food img{height:100%;width:100%;object-fit:cover;display:block;}
+  .food-copy{background:var(--olive);color:#EFE9DA;padding:56px 44px;display:flex;flex-direction:column;justify-content:center;}
+  .food-copy h3{color:#FBF4E8;font-size:26px;}
+  .food-copy p{margin-top:16px;color:#D8D6C4;font-size:15.5px;max-width:38ch;}
+  @media(max-width:900px){
+    .food{grid-template-columns:1fr 1fr;height:auto;}
+    .food img{aspect-ratio:1/1;height:auto;}
+    .food-copy{grid-column:1/-1;order:-1;padding:44px 24px;}
+  }
+
+  /* ---------- PROGRAMMA ---------- */
+  .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);}
+  .day{padding:36px 32px;border-left:1px solid var(--line);}
+  .day:first-child{border-left:none;}
+  .day h3{font-size:22px;}
+  .day .slot{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);}
+  .day .slot:first-of-type{border-top:none;padding-top:0;}
+  .day .time{font-size:13px;color:var(--terracotta-dark);font-weight:500;}
+  .day .what{margin-top:4px;font-size:15px;color:var(--ink-soft);}
+  .prog-note{margin-top:36px;font-size:14.5px;color:var(--ink-soft);max-width:66ch;}
+  @media(max-width:900px){
+    .timeline{grid-template-columns:1fr;}
+    .day{border-left:none;border-top:1px solid var(--line);}
+    .day:first-child{border-top:none;}
+  }
+
+  /* ---------- LUOGO ---------- */
+  .place-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;}
+  .place-grid img{width:100%;height:100%;object-fit:cover;border-radius:2px;}
+  .place-grid .tall{grid-row:span 2;}
+  @media(max-width:800px){
+    .place-grid{grid-template-columns:1fr;}
+    .place-grid .tall{grid-row:auto;}
+  }
+
+  /* ---------- INSEGNANTE ---------- */
+  .teacher{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:start;}
+  .teacher img{border-radius:2px;width:100%;}
+  .teacher-text p{color:var(--ink-soft);font-size:16.5px;max-width:58ch;margin:0 0 16px;}
+  .teacher-text h3{font-size:24px;margin-bottom:4px;}
+  .teacher-role{font-size:14.5px;color:var(--terracotta-dark);margin-bottom:22px;}
+  @media(max-width:760px){
+    .teacher{grid-template-columns:1fr;}
+    .teacher img{max-width:220px;}
+  }
+
+  /* ---------- RECENSIONI (carosello testi) ---------- */
+  .carousel-wrap{position:relative;}
+  .carousel{
+    display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;
+    padding-bottom:8px;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .carousel::-webkit-scrollbar{display:none;}
+  .review-card{
+    flex:0 0 calc((100% - 48px) / 3);
+    scroll-snap-align:start;
+    background:var(--paper);
+    border:1px solid var(--line);
+    padding:32px 28px;
+    display:flex;flex-direction:column;
+    justify-content:space-between;
+  }
+  .review-card p.quote{
+    font-family:'Libre Baskerville',serif;font-size:16.5px;font-style:italic;
+    line-height:1.55;color:var(--ink);
+    display:-webkit-box;
+    -webkit-line-clamp:6;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .review-card.expanded p.quote{
+    -webkit-line-clamp:unset;
+    overflow:visible;
+  }
+  .review-card .read-more{
+    align-self:flex-start;
+    margin-top:14px;
+    background:none;border:none;padding:0;
+    font-family:'Mulish',sans-serif;font-size:13.5px;font-weight:500;
+    color:var(--terracotta-dark);cursor:pointer;
+    text-decoration:underline;text-underline-offset:3px;
+  }
+  .review-card .who{margin-top:22px;font-size:14px;color:var(--ink-soft);}
+  .review-card .who b{color:var(--ink);font-weight:500;}
+  @media(max-width:900px){
+    .review-card{flex:0 0 88%;}
+  }
+  .carousel-nav{display:flex;justify-content:flex-end;gap:10px;margin-top:20px;}
+  .carousel-btn{
+    width:40px;height:40px;border-radius:50%;
+    border:1px solid var(--line);background:transparent;
+    display:flex;align-items:center;justify-content:center;cursor:pointer;
+    color:var(--ink);
+  }
+
+  /* ---------- IL CONTESTO (carosello immagini) ---------- */
+  .place-card{
+    flex:0 0 calc((100% - 48px) / 3);
+    scroll-snap-align:start;
+  }
+  .place-frame{
+    position:relative;width:100%;aspect-ratio:4/3;
+    overflow:hidden;border-radius:2px;
+  }
+  .place-frame img{width:100%;height:100%;object-fit:cover;display:block;}
+  .place-caption{margin-top:12px;font-size:14.5px;color:var(--ink-soft);}
+  @media(max-width:900px){.place-card{flex:0 0 88%;}}
+  .carousel-btn:hover{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+
+  /* ---------- VIDEO CAROUSEL ---------- */
+  .video-card{
+    flex:0 0 260px;
+    scroll-snap-align:start;
+  }
+  .video-frame{
+    position:relative;width:100%;aspect-ratio:9/16;
+    background:var(--olive);
+    border-radius:2px;overflow:hidden;
+  }
+  .video-frame iframe{width:100%;height:100%;border:0;display:block;}
+  .video-frame .placeholder{
+    position:absolute;inset:0;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:10px;color:#EFE9DA;
+  }
+  .video-frame .placeholder .play{
+    width:52px;height:52px;border-radius:50%;border:1.5px solid #EFE9DA;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .video-frame .placeholder small{font-size:12.5px;color:#C9C4AC;max-width:22ch;text-align:center;}
+  .video-title{margin-top:14px;font-size:15px;}
+  @media(max-width:900px){.video-card{flex:0 0 68vw;max-width:280px;}}
+
+  /* ---------- PARTECIPAZIONE ---------- */
+  .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);border:1px solid var(--line);}
+  .price-card{background:var(--paper);padding:40px 36px;}
+  .price-card h3{font-size:20px;}
+  .price-card .tag{font-size:13px;color:var(--ink-soft);margin-top:4px;}
+  .price-card p{color:var(--ink-soft);font-size:15.5px;margin-top:18px;}
+  .price-card .figure{font-family:'Libre Baskerville',serif;font-size:17px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line);}
+  .price-card.featured{background:var(--olive);}
+  .price-card.featured h3{color:#FBF4E8;}
+  .price-card.featured .tag{color:#C9C4AC;}
+  .price-card.featured p{color:#D8D6C4;}
+  .price-card.featured .figure{color:#FBF4E8;border-top:1px solid rgba(251,244,232,0.25);}
+  @media(max-width:760px){.price-grid{grid-template-columns:1fr;}}
+  .offerta-note{max-width:720px;margin:0 auto 56px;text-align:center;}
+  .offerta-note p{color:var(--ink-soft);font-size:16px;}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:820px;}
+  .faq-item{border-top:1px solid var(--line);}
+  .faq-list .faq-item:last-child{border-bottom:1px solid var(--line);}
+  .faq-item summary{
+    list-style:none;cursor:pointer;
+    padding:24px 4px;
+    display:flex;align-items:center;justify-content:space-between;gap:24px;
+    font-family:'Libre Baskerville',serif;font-size:18px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item .plus{
+    flex:none;width:22px;height:22px;position:relative;
+  }
+  .faq-item .plus::before,.faq-item .plus::after{
+    content:'';position:absolute;background:var(--ink);
+  }
+  .faq-item .plus::before{left:0;top:50%;width:100%;height:1px;transform:translateY(-50%);}
+  .faq-item .plus::after{top:0;left:50%;height:100%;width:1px;transform:translateX(-50%);transition:opacity 0.2s ease;}
+  .faq-item[open] .plus::after{opacity:0;}
+  .faq-item .answer{padding:0 4px 26px;color:var(--ink-soft);font-size:15.5px;max-width:64ch;}
+  .faq-note{margin-top:24px;font-size:13.5px;color:var(--ink-soft);font-style:italic;}
+
+  /* ---------- FINAL CTA ---------- */
+  .final-cta{background:var(--terracotta);color:#FBF4E8;text-align:center;padding:110px 32px;}
+  .final-cta h2{color:#FBF4E8;font-size:clamp(30px,4vw,44px);max-width:16ch;margin:0 auto;line-height:1.15;}
+  .final-cta p{margin-top:20px;color:#F3D9C8;font-size:17px;}
+  .final-actions{display:flex;justify-content:center;gap:18px;margin-top:40px;flex-wrap:wrap;}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:56px 32px 40px;border-top:1px solid var(--line);}
+  .footer-grid{
+    display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;
+    max-width:1140px;margin:0 auto;
+  }
+  .footer-grid .logo-mark img{height:34px;}
+  .footer-tag{margin-top:10px;font-size:13px;color:var(--ink-soft);max-width:34ch;}
+  .footer-col-title{font-family:'Libre Baskerville',serif;font-size:16px;margin-bottom:16px;}
+  .footer-links{display:flex;gap:22px;font-size:14px;color:var(--ink-soft);flex-wrap:wrap;margin-top:22px;}
+  .footer-links a{text-decoration:none;}
+  .footer-links a:hover{color:var(--ink);}
+  .footer-contact{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+  .footer-contact a{text-decoration:none;font-size:14.5px;color:var(--ink-soft);}
+  .footer-contact a:hover{color:var(--ink);}
+  .footer-social{display:flex;gap:14px;}
+  .footer-social a{
+    width:38px;height:38px;border-radius:50%;
+    border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--ink-soft);
+  }
+  .footer-social a:hover{color:var(--ink);border-color:var(--ink);}
+  .footer-bottom{
+    max-width:1140px;margin:32px auto 0;padding-top:20px;
+    border-top:1px solid var(--line);font-size:13px;color:var(--ink-soft);
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+  }
+  .footer-legal{display:flex;gap:20px;flex-wrap:wrap;}
+  .footer-legal a{color:var(--ink-soft);text-decoration:none;}
+  .footer-legal a:hover{color:var(--ink);}
+  @media(max-width:760px){
+    .footer-grid{grid-template-columns:1fr;gap:32px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo-mark" href="#top" aria-label="Valle Benedetta">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTg3IiBoZWlnaHQ9Ijg4IiB2aWV3Qm94PSIwIDAgMTg3IDg4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMTI0MDVfNzU0MikiPgo8cGF0aCBkPSJNMTAwLjc5NiAxNS4yNTg5TDEwMC40NTkgMTMuMTA5Qzk3LjcyMzUgMTEuODUyMiA5NS44NzM4IDkuODc0OTQgOTUuNjI1NSA3LjIzNjhDOTUuNTczNiA2LjY5MjgzIDk1LjgyNTcgNS44Njg1MyA5NS40OTAyIDUuNDM0MUM5Ni4xNjY3IDQuODc3MTQgOTYuNTk2NyA0LjAzNjEyIDk2LjU5NjcgMy4wOTQ4NkM5Ni41OTY3IDEuNDE2NTUgOTUuMjMwOCAwLjA1NzU1NjIgOTMuNTQ0MiAwLjA1NzU1NjJDOTEuODU3NyAwLjA1NzU1NjIgOTAuNDkxOCAxLjQxNjU1IDkwLjQ5MTggMy4wOTQ4NkM5MC40OTE4IDQuMDM2MTIgOTAuOTIxOCA0Ljg3NzE0IDkxLjU5ODIgNS40MzQxQzkxLjI2MjggNS44Njg1MyA5MS41MTQ4IDYuNjkyODMgOTEuNDYzIDcuMjM2OEM5MS4yMTQ2IDkuODczMDkgODkuMzY1IDExLjg1MjIgODYuNjI5NSAxMy4xMDlMODYuMjkyMiAxNS4yNTg5TDcwLjIxMDkgMjEuNzY0Mkw3MS41MDQ2IDI2LjA0MTdWNTQuNDk4N0gxMTUuNTgyVjI2LjA0MTdMMTE2Ljg3NiAyMS43NjQyTDEwMC43OTQgMTUuMjU4OUgxMDAuNzk2Wk05My40NjQ1IDIyLjczMTVIOTMuNjI1OEM5My42MjU4IDIyLjczMTUgMTAyLjQ0OSAyMi4zMTc1IDEwMi44MjQgMzAuOTI2M0MxMDEuMTQ3IDMwLjU1ODcgOTcuMTQ4OSAyOS40MDU3IDk1LjU5NzcgMjYuNTQzSDkxLjQ5NDVDODkuOTQzMiAyOS40MDU3IDg1Ljk0NTYgMzAuNTU4NyA4NC4yNjg0IDMwLjkyNjNDODQuNjQyNyAyMi4zMTc1IDkzLjQ2NjQgMjIuNzMxNSA5My40NjY0IDIyLjczMTVIOTMuNDY0NVpNODQuMjUzNSA1MS45NTUzVjMyLjYzNjFIOTIuMDIyN0M5Mi4yMTU0IDMxLjk4MDggOTIuODI1MSAzMS41MDE4IDkzLjU0NjEgMzEuNTAxOEM5NC4yNjcgMzEuNTAxOCA5NC44NzQ5IDMxLjk4MDggOTUuMDY5NSAzMi42MzYxSDEwMi44MzlWNTEuOTU1M0g4NC4yNTU0SDg0LjI1MzVaIiBmaWxsPSIjODMxNzE4Ii8+CjxwYXRoIGQ9Ik05My41ODc3IDQ4LjE0MTlDOTQuNDkwMyA0OC4xNDE5IDk1LjIyMjQgNDcuNDE0MiA5NS4yMjI0IDQ2LjUxMzdIOTEuOTUzMUM5MS45NTMxIDQ3LjQxMjMgOTIuNjg1MiA0OC4xNDE5IDkzLjU4NzcgNDguMTQxOVoiIGZpbGw9IiM4MzE3MTgiLz4KPHBhdGggZD0iTTk0LjU0NjYgMzMuMDQ4M0M5NC41NDY2IDMzLjAzNzEgOTQuNTUwMyAzMy4wMjc4IDk0LjU1MDMgMzMuMDE4NkM5NC41NTAzIDMyLjQ2NzIgOTQuMSAzMi4wMTc5IDkzLjU0NTggMzIuMDE3OUM5Mi45OTE3IDMyLjAxNzkgOTIuNTQxMyAzMi40NjUzIDkyLjU0MTMgMzMuMDE4NkM5Mi41NDEzIDMzLjAyOTcgOTIuNTQzMiAzMy4wMzkgOTIuNTQ1IDMzLjA0ODNDODYuNzMzIDMzLjE2NTIgOTEuNTg4NyA0MC4zNzQyIDg2LjY0MjIgNDUuMzIxOEM4Ni42NDIyIDQ1LjMyMTggODYuMDM2MiA0NS45MzgyIDg3LjE3MDQgNDUuOTc5MUg5OS45MjEyQzEwMS4wNTcgNDUuOTM4MiAxMDAuNDQ5IDQ1LjMyMTggMTAwLjQ0OSA0NS4zMjE4Qzk1LjUwMjkgNDAuMzc0MiAxMDAuMzYgMzMuMTY1MiA5NC41NDY2IDMzLjA0ODNaIiBmaWxsPSIjODMxNzE4Ii8+CjxwYXRoIGQ9Ik02LjkxNDQxIDcxLjIwOTRMMTAuNDU5OCA2Mi4wNjIzSDEzLjYyMzRMOC41OTUzNyA3My44OTIxSDUuMTUwMDVMMC4xMzg2NzIgNjIuMDYyM0gzLjQwMjM3TDYuOTE0NDEgNzEuMjA5NFoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNS41MjEzIDczLjg5NEgxMi41MDc4TDE3Ljg2NzYgNjIuMDY0MUgyMS4yMjk1TDI2LjU4OTMgNzMuODk0SDIzLjQ5MjRMMjIuMzkzNCA3MS4zNzQ3SDE2LjU2NjZMMTUuNTE3NiA3My44OTRIMTUuNTIxM1pNMTkuNDk4NSA2NC4zOTk2TDE3LjQ4NCA2OS4xNTQySDIxLjUyOThMMTkuNDk4NSA2NC4zOTk2WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTI4LjIyMjYgNjIuMDY0MUgzMS4xNTI3VjcxLjQ5MTZIMzguMjc2OEwzNy45MjY1IDczLjg5NEgyOC4yMjA3VjYyLjA2NDFIMjguMjIyNloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik00MC4xMDkzIDYyLjA2NDFINDMuMDM5NFY3MS40OTE2SDUwLjE2MzVMNDkuODEzMyA3My44OTRINDAuMTA3NFY2Mi4wNjQxSDQwLjEwOTNaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNTEuOTk0MSA2Mi4wNjQxSDYyLjA4MThWNjQuMjg0NUg1NC44OTA5VjY2Ljc1MzdINjEuNzMzM1Y2OC45NTc1SDU0Ljg5MDlWNzEuNjc1NEg2Mi40NjU0TDYyLjE0ODUgNzMuODk1OUg1MS45OTQxVjYyLjA2NlY2Mi4wNjQxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTY5LjE3NTggNjIuMDY0MUg3NS4wODZDNzguMzcyIDYyLjA2NDEgODAuMDE0IDYzLjA4MTUgODAuMDE0IDY1LjExMjZDODAuMDE0IDY2LjMxNzUgNzkuMzc2NSA2Ny4xNTY2IDc4LjA5OTUgNjcuNjMxOUM3OS42NzQ4IDY4LjE1MTcgODAuNDYyNSA2OS4wODkzIDgwLjQ2MjUgNzAuNDQ4M0M4MC40NjI1IDcxLjU3NTIgODAuMDI4OCA3Mi40MzEgNzkuMTYzMyA3My4wMTU4Qzc4LjI5NzggNzMuNjAwNyA3Ny4wMzIgNzMuODk0IDc1LjM2NzcgNzMuODk0SDY5LjE3NThWNjIuMDY0MVpNNzYuNjUwMiA2NC40MjU2Qzc2LjI5NDQgNjQuMjIxNCA3NS43MjM2IDY0LjExOTMgNzQuOTM1OSA2NC4xMTkzSDcxLjkwNTdWNjYuNzg3Mkg3NS4wNjkzQzc1Ljc5MDMgNjYuNzg3MiA3Ni4zMjQgNjYuNjc3NiA3Ni42NjY5IDY2LjQ1NjdDNzcuMDExNiA2Ni4yMzU4IDc3LjE4NCA2NS44ODg2IDc3LjE4NCA2NS40MTMzQzc3LjE4NCA2NC45MzggNzcuMDA2MSA2NC42MzE3IDc2LjY1MjEgNjQuNDI3NUw3Ni42NTAyIDY0LjQyNTZaTTc3LjYxNTggNzAuMjk5N0M3Ny42MTU4IDY5Ljc1OTUgNzcuNDE1NiA2OS4zNjAzIDc3LjAxNzIgNjkuMTA2Qzc2LjYxNjkgNjguODUxNiA3NS45OTA0IDY4LjcyNTQgNzUuMTM2MSA2OC43MjU0SDcxLjkwNTdWNzEuODQwN0g3NS4xMzYxQzc2LjAxMjcgNzEuODQwNyA3Ni42NDQ3IDcxLjcyIDc3LjAzMzkgNzEuNDc2OEM3Ny40MjMxIDcxLjIzMzYgNzcuNjE1OCA3MC44NDE4IDc3LjYxNTggNzAuMjk5N1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik04Mi43MDcgNjIuMDY0MUg5Mi43OTQ3VjY0LjI4NDVIODUuNjAzOFY2Ni43NTM3SDkyLjQ0NjJWNjguOTU3NUg4NS42MDM4VjcxLjY3NTRIOTMuMTc4M0w5Mi44NjE0IDczLjg5NTlIODIuNzA3VjYyLjA2NlY2Mi4wNjQxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTk1LjMyNjIgNjIuMDY0MUg5Ny45NzI3TDEwNC41ODIgNjkuOTY3NFY2Mi4wNjQxSDEwNy4zNzhWNzMuODk0SDEwNC43MzJMOTguMTIyOCA2NS45NzRWNzMuODk0SDk1LjMyNjJWNjIuMDY0MVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMTAuMjQyIDYyLjA2NDFIMTIwLjMzVjY0LjI4NDVIMTEzLjEzOVY2Ni43NTM3SDExOS45ODFWNjguOTU3NUgxMTMuMTM5VjcxLjY3NTRIMTIwLjcxM0wxMjAuMzk3IDczLjg5NTlIMTEwLjI0MlY2Mi4wNjZWNjIuMDY0MVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMjIuODYxIDYyLjA2NDFIMTI4LjI4OEMxMzAuNTk3IDYyLjA2NDEgMTMyLjM1IDYyLjU2NzIgMTMzLjU0NyA2My41NzE2QzEzNC43NDYgNjQuNTc3OSAxMzUuMzQ1IDY2LjA0NjQgMTM1LjM0NSA2Ny45NzkxQzEzNS4zNDUgNjkuOTExNyAxMzQuNzE1IDcxLjMyNjQgMTMzLjQ1NSA3Mi4zNTMxQzEzMi4xOTQgNzMuMzc5NyAxMzAuMzg5IDczLjg5NCAxMjguMDM2IDczLjg5NEgxMjIuODU3VjYyLjA2NDFIMTIyLjg2MVpNMTMyLjM1IDY3Ljk2MjNDMTMyLjM1IDY1LjU5OSAxMzEuMDA2IDY0LjQxNjQgMTI4LjMyMSA2NC40MTY0SDEyNS43NThWNzEuNTQxOEgxMjguMTIxQzEzMC45NCA3MS41NDE4IDEzMi4zNSA3MC4zNDggMTMyLjM1IDY3Ljk2MjNaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTM3LjY2IDYyLjA2NDFIMTQ3Ljc0OFY2NC4yODQ1SDE0MC41NTdWNjYuNzUzN0gxNDcuMzk5VjY4Ljk1NzVIMTQwLjU1N1Y3MS42NzU0SDE0OC4xMzFMMTQ3LjgxNCA3My44OTU5SDEzNy42NlY2Mi4wNjZWNjIuMDY0MVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNTMuNjQyIDY0LjQ2NjVIMTQ5LjA2NFY2Mi4wNjQxSDE2MS4xNVY2NC40NjY1SDE1Ni41NzJWNzMuODk0SDE1My42NDJWNjQuNDY2NVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNjYuNzc3IDY0LjQ2NjVIMTYyLjE5OVY2Mi4wNjQxSDE3NC4yODVWNjQuNDY2NUgxNjkuNzA3VjczLjg5NEgxNjYuNzc3VjY0LjQ2NjVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTc1Ljg4MyA3My44OTRIMTcyLjg2OUwxNzguMjI5IDYyLjA2NDFIMTgxLjU5MUwxODYuOTUxIDczLjg5NEgxODMuODU0TDE4Mi43NTUgNzEuMzc0N0gxNzYuOTI4TDE3NS44NzkgNzMuODk0SDE3NS44ODNaTTE3OS44NiA2NC4zOTk2TDE3Ny44NDUgNjkuMTU0MkgxODEuODkxTDE3OS44NiA2NC4zOTk2WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTM2LjA0OCA4Mi4zODAyVjg3LjgyOTJIMzUuMDY5NVY4Mi4zODAySDMzLjYwMzVWODEuNDYzMUgzNy41MTRWODIuMzgwMkgzNi4wNDhaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMzkuODM0IDgxLjQ2MzFWODUuMzAwNkMzOS44MzQgODUuNjQ0IDM5Ljg0MzMgODYuMDYzNiA0MC4wMzYgODYuMzk3OEM0MC4yMjY5IDg2LjcyMjcgNDAuNjU4NyA4Ny4wNTY5IDQxLjIyNCA4Ny4wNTY5QzQxLjc4OTMgODcuMDU2OSA0Mi4yMjExIDg2LjcyMjcgNDIuNDEyIDg2LjM5NzhDNDIuNjAyOSA4Ni4wNjM2IDQyLjYxNCA4NS42NDQgNDIuNjE0IDg1LjMwMDZWODEuNDYzMUg0My41OTI2Vjg1LjU1NjhDNDMuNTkyNiA4Ni4wNjE4IDQzLjQ4NjkgODYuNjcyNiA0Mi45OTc2IDg3LjIwNzJDNDIuNjYyMiA4Ny41NjkzIDQyLjA5NjkgODcuOTUxNyA0MS4yMjQgODcuOTUxN0M0MC4zNTExIDg3Ljk1MTcgMzkuNzg1OCA4Ny41NjkzIDM5LjQ1MDQgODcuMjA3MkMzOC45NjExIDg2LjY3MjYgMzguODU1NSA4Ni4wNjE4IDM4Ljg1NTUgODUuNTU2OFY4MS40NjMxSDM5LjgzNFoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik00OC4zNjc4IDgyLjg3NTlDNDguMzEwNCA4Mi43MzMgNDguMjIzMyA4Mi41OTkzIDQ4LjA4MDYgODIuNDc0OUM0Ny44Nzg2IDgyLjMxMzQgNDcuNjY5MSA4Mi4yNDY2IDQ3LjM5MTEgODIuMjQ2NkM0Ni43OTYyIDgyLjI0NjYgNDYuNDkwNCA4Mi41OTkzIDQ2LjQ5MDQgODMuMDA5NkM0Ni40OTA0IDgzLjIwMDggNDYuNTU3MSA4My41MzUgNDcuMTc5OSA4My43ODE5TDQ3LjgyMyA4NC4wNEM0OS4wMDE3IDg0LjUxNzEgNDkuMzI3OSA4NS4xODU1IDQ5LjMyNzkgODUuOTExNEM0OS4zMjc5IDg3LjEyMzcgNDguNDY0MiA4Ny45NTM2IDQ3LjI2NyA4Ny45NTM2QzQ2LjUyOTQgODcuOTUzNiA0Ni4wODgzIDg3LjY3NjkgNDUuNzYyMSA4Ny4zMTQ5QzQ1LjQxNzQgODYuOTMyNSA0NS4yNjM1IDg2LjUxMjkgNDUuMjI0NiA4Ni4wNzQ4TDQ2LjE5MiA4NS44NjVDNDYuMTkyIDg2LjE4MDYgNDYuMzA3IDg2LjQ3NTggNDYuNDYwOCA4Ni42NzYzQzQ2LjY0MjQgODYuOTA0NiA0Ni45MTExIDg3LjA1ODcgNDcuMjk0OCA4Ny4wNTg3QzQ3Ljg4OTcgODcuMDU4NyA0OC4zNDkzIDg2LjYyOTkgNDguMzQ5MyA4NS45ODkzQzQ4LjM0OTMgODUuMzQ4OCA0Ny44NTA4IDg1LjA3MjIgNDcuNDI4MiA4NC45MDE0TDQ2LjgxNDggODQuNjQzNEM0Ni4yODg0IDg0LjQyNDMgNDUuNTExOSA4My45ODQzIDQ1LjUxMTkgODMuMDNDNDUuNTExOSA4Mi4xNzA0IDQ2LjE4MjggODEuMzQ5OSA0Ny4zODE5IDgxLjM0OTlDNDguMDcxMyA4MS4zNDk5IDQ4LjQ2NjEgODEuNjA3OSA0OC42NjYyIDgxLjc3ODdDNDguODM4NiA4MS45MzEgNDkuMDIwMiA4Mi4xNSA0OS4xNTU1IDgyLjQxNzRMNDguMzY5NyA4Mi44NzU5SDQ4LjM2NzhaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNTUuNzY5NSA4Mi45NTJDNTUuMDU5NiA4Mi4zMTM0IDU0LjM5OCA4Mi4yNDY2IDU0LjAzNDcgODIuMjQ2NkM1Mi42NDQ3IDgyLjI0NjYgNTEuNzA1MSA4My4yNjc3IDUxLjcwNTEgODQuNjcxMkM1MS43MDUxIDg2LjA3NDggNTIuNjgzNyA4Ny4wNTY5IDU0LjA0NCA4Ny4wNTY5QzU0LjgxMTMgODcuMDU2OSA1NS40MDYyIDg2LjY2NTEgNTUuNzY5NSA4Ni4zMjE3Vjg3LjQ3NjRDNTUuMTI2MyA4Ny44NTg5IDU0LjQ1NTQgODcuOTUzNiA1NC4wMTQ0IDg3Ljk1MzZDNTIuODU0MiA4Ny45NTM2IDUyLjEyNTggODcuNDI4MiA1MS43NTE0IDg3LjA3NTRDNTEuMDA0NiA4Ni4zNzkyIDUwLjcyNjYgODUuNTY3OSA1MC43MjY2IDg0LjY3MTJDNTAuNzI2NiA4My40OTc5IDUxLjIxNTggODIuNjg2NiA1MS43NTE0IDgyLjE3OTdDNTIuNDEzMSA4MS41NTk2IDUzLjE4MDQgODEuMzQ5OSA1NC4wNjI1IDgxLjM0OTlDNTQuNjQ4MiA4MS4zNDk5IDU1LjIxMzUgODEuNDU1NyA1NS43Njk1IDgxLjgwODRWODIuOTUzOVY4Mi45NTJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNjEuMTE5NyA4Ni4yOTJINTguMzg3OUw1Ny42ODc0IDg3LjgyOTJINTYuNjMyOEw1OS44MTUgODEuMDkxOEw2Mi44NDUxIDg3LjgyOTJINjEuNzkwNkw2MS4xMTk3IDg2LjI5MlpNNjAuNzI2OCA4NS4zNzY3TDU5Ljc3NzkgODMuMjE5NEw1OC43OTAxIDg1LjM3NjdINjAuNzI2OFoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik02NC4xMjg5IDg3LjgyOTJWODEuMDM0M0w2OC43Njk2IDg1Ljg3MjRWODEuNDYzMUg2OS43NDgyVjg4LjIyMDlMNjUuMTA3NSA4My4zODI4Vjg3LjgzMTFINjQuMTI4OVY4Ny44MjkyWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTczLjA5NCA4NS4wNzk3TDcwLjk5NDEgODEuNDYzMUg3Mi4xMDYxTDczLjU4MzIgODQuMDEyMUw3NS4wNjAzIDgxLjQ2MzFINzYuMTcyM0w3NC4wNzI1IDg1LjA3OTdWODcuODI5Mkg3My4wOTRWODUuMDc5N1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik04MS4yNzI1IDgxLjQ2MzFDODIuMDQ5MSA4MS40NjMxIDgyLjU0NzYgODEuNTU3OCA4Mi45NTkgODEuODM0NEM4My42NTk2IDgyLjMwMjMgODMuNzE3IDgzLjA1NiA4My43MTcgODMuMzMyNkM4My43MTcgODQuMjQ5OCA4My4xNTE4IDg0LjkxNjMgODIuMjk3NCA4NS4xMDc1TDg0LjI5MTYgODcuODI3M0g4My4xMTI5TDgxLjI4MTggODUuMjIyNkg4MS4xMDk0Vjg3LjgyNzNIODAuMTMwOVY4MS40NjEzSDgxLjI3MjVWODEuNDYzMVpNODEuMTA5NCA4NC4zODM1SDgxLjQxNzFDODEuNjg1OCA4NC4zODM1IDgyLjc3OTIgODQuMzU1NiA4Mi43NzkyIDgzLjM0MzhDODIuNzc5MiA4Mi40NDcxIDgxLjkyNjcgODIuMzYxNyA4MS40NDY3IDgyLjM2MTdIODEuMTExM1Y4NC4zODUzTDgxLjEwOTQgODQuMzgzNVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik04OS4yNTkyIDgyLjM4MDNIODYuNzA5VjgzLjk5MzZIODkuMTgzMlY4NC45MTA3SDg2LjcwOVY4Ni45MTU4SDg5LjI1OTJWODcuODMyOUg4NS43MzA1VjgxLjQ2NjhIODkuMjU5MlY4Mi4zODRWODIuMzgwM1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05Mi43Nzg1IDgyLjM4MDNWODcuODI5Mkg5MS44VjgyLjM4MDNIOTAuMzM0VjgxLjQ2MzFIOTQuMjQ0NVY4Mi4zODAzSDkyLjc3ODVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNOTYuNzI3NiA4MS40NjMxQzk3LjUwNDEgODEuNDYzMSA5OC4wMDI3IDgxLjU1NzggOTguNDE0MSA4MS44MzQ0Qzk5LjExNDcgODIuMzAyMyA5OS4xNzIxIDgzLjA1NiA5OS4xNzIxIDgzLjMzMjZDOTkuMTcyMSA4NC4yNDk4IDk4LjYwNjggODQuOTE2MyA5Ny43NTI1IDg1LjEwNzVMOTkuNzQ2NiA4Ny44MjczSDk4LjU2NzlMOTYuNzM2OCA4NS4yMjI2SDk2LjU2NDVWODcuODI3M0g5NS41ODU5VjgxLjQ2MTNIOTYuNzI3NlY4MS40NjMxWk05Ni41NjQ1IDg0LjM4MzVIOTYuODcyMUM5Ny4xNDA5IDg0LjM4MzUgOTguMjM0MyA4NC4zNTU2IDk4LjIzNDMgODMuMzQzOEM5OC4yMzQzIDgyLjQ0NzEgOTcuMzgxOCA4Mi4zNjE3IDk2LjkwMTggODIuMzYxN0g5Ni41NjYzVjg0LjM4NTNMOTYuNTY0NSA4NC4zODM1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTEwNC43MTYgODIuMzgwMkgxMDIuMTY2VjgzLjk5MzZIMTA0LjY0Vjg0LjkxMDdIMTAyLjE2NlY4Ni45MTU4SDEwNC43MTZWODcuODMyOUgxMDEuMTg4VjgxLjQ2NjhIMTA0LjcxNlY4Mi4zODRWODIuMzgwMloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMTAuMjE3IDg2LjI5MkgxMDcuNDg2TDEwNi43ODUgODcuODI5MkgxMDUuNzNMMTA4LjkxMyA4MS4wOTE4TDExMS45NDMgODcuODI5MkgxMTAuODg4TDExMC4yMTcgODYuMjkyWk0xMDkuODI0IDg1LjM3NjdMMTA4Ljg3NiA4My4yMTk0TDEwNy44ODggODUuMzc2N0gxMDkuODI0WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTExNC42MiA4Mi4zODAzVjg3LjgyOTJIMTEzLjY0MlY4Mi4zODAzSDExMi4xNzZWODEuNDYzMUgxMTYuMDg2VjgyLjM4MDNIMTE0LjYyWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTEyNC44NzcgODIuOTUyQzEyNC4xNjcgODIuMzEzNCAxMjMuNTA1IDgyLjI0NjYgMTIzLjE0MiA4Mi4yNDY2QzEyMS43NTIgODIuMjQ2NiAxMjAuODEyIDgzLjI2NzcgMTIwLjgxMiA4NC42NzEyQzEyMC44MTIgODYuMDc0OCAxMjEuNzkxIDg3LjA1NjkgMTIzLjE1MSA4Ny4wNTY5QzEyMy45MTkgODcuMDU2OSAxMjQuNTEyIDg2LjY2NTEgMTI0Ljg3NyA4Ni4zMjE3Vjg3LjQ3NjRDMTI0LjIzNCA4Ny44NTg5IDEyMy41NjMgODcuOTUzNiAxMjMuMTIyIDg3Ljk1MzZDMTIxLjk2MSA4Ny45NTM2IDEyMS4yMzMgODcuNDI4MiAxMjAuODU5IDg3LjA3NTRDMTIwLjExMiA4Ni4zNzkyIDExOS44MzIgODUuNTY3OSAxMTkuODMyIDg0LjY3MTJDMTE5LjgzMiA4My40OTc5IDEyMC4zMjEgODIuNjg2NiAxMjAuODU5IDgyLjE3OTdDMTIxLjUyIDgxLjU1OTYgMTIyLjI4OCA4MS4zNDk5IDEyMy4xNyA4MS4zNDk5QzEyMy43NTYgODEuMzQ5OSAxMjQuMzIxIDgxLjQ1NTcgMTI0Ljg3NyA4MS44MDg0VjgyLjk1MzlWODIuOTUyWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTEzMC4wOTMgODIuMzgwMkgxMjcuNTQzVjgzLjk5MzZIMTMwLjAxN1Y4NC45MTA3SDEyNy41NDNWODYuOTE1OEgxMzAuMDkzVjg3LjgzMjlIMTI2LjU2NFY4MS40NjY4SDEzMC4wOTNWODIuMzg0VjgyLjM4MDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTMxLjg0IDg3LjgyOTJWODEuMDM0M0wxMzYuNDgxIDg1Ljg3MjRWODEuNDYzMUgxMzcuNDU5Vjg4LjIyMDlMMTMyLjgxOCA4My4zODI4Vjg3LjgzMTFIMTMxLjg0Vjg3LjgyOTJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTQxLjI0MyA4Mi4zODAzVjg3LjgyOTJIMTQwLjI2NVY4Mi4zODAzSDEzOC43OTlWODEuNDYzMUgxNDIuNzA5VjgyLjM4MDNIMTQxLjI0M1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNDcuNTgxIDgyLjM4MDNIMTQ1LjAzMVY4My45OTM2SDE0Ny41MDVWODQuOTEwN0gxNDUuMDMxVjg2LjkxNThIMTQ3LjU4MVY4Ny44MzI5SDE0NC4wNTNWODEuNDY2OEgxNDcuNTgxVjgyLjM4NFY4Mi4zODAzWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTE1MC40NjggODEuNDYzMUMxNTEuMjQ0IDgxLjQ2MzEgMTUxLjc0MyA4MS41NTc4IDE1Mi4xNTQgODEuODM0NEMxNTIuODU1IDgyLjMwMjMgMTUyLjkxMiA4My4wNTYgMTUyLjkxMiA4My4zMzI2QzE1Mi45MTIgODQuMjQ5OCAxNTIuMzQ3IDg0LjkxNjMgMTUxLjQ5MyA4NS4xMDc1TDE1My40ODcgODcuODI3M0gxNTIuMzA4TDE1MC40NzcgODUuMjIyNkgxNTAuMzA1Vjg3LjgyNzNIMTQ5LjMyNlY4MS40NjEzSDE1MC40NjhWODEuNDYzMVpNMTUwLjMwNSA4NC4zODM1SDE1MC42MTJDMTUwLjg4MSA4NC4zODM1IDE1MS45NzUgODQuMzU1NiAxNTEuOTc1IDgzLjM0MzhDMTUxLjk3NSA4Mi40NDcxIDE1MS4xMjIgODIuMzYxNyAxNTAuNjQyIDgyLjM2MTdIMTUwLjMwN1Y4NC4zODUzTDE1MC4zMDUgODQuMzgzNVoiIGZpbGw9ImJsYWNrIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMTI0MDVfNzU0MiI+CjxyZWN0IHdpZHRoPSIxODciIGhlaWdodD0iODgiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==" alt="Valle Benedetta">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#percorso">Il percorso</a>
+      <a href="#cosa-vivrai">Cosa vivrai</a>
+      <a href="#contesto">La location</a>
+      <a href="#cucina">La cucina</a>
+      <a href="#chi-rivolto">A chi è rivolto</a>
+      <a href="#cosa-potrai-portare">Cosa portare con te</a>
+      <a href="#programma">Programma</a>
+      <a href="#insegnante">L'insegnante</a>
+      <a href="#recensioni">Le recensioni</a>
+      <a href="#partecipazione">I costi</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-small" href="https://booking.vallebenedetta.org/it/product/leadership-naturale" target="_blank" rel="noopener">Prenota ora</a>
+      <a class="btn btn-outline btn-small" href="https://wa.me/3403952921" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Apri il menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding:0;">
+  <img class="hero-bg" src="images/01.webp" alt="Partecipante in meditazione seduta, vista sulle colline di Valle Benedetta">
+  <div class="hero-overlay"></div>
+  <div class="hero-copy">
+    <h1>Leadership Naturale</h1>
+    <p class="dek">Torna a casa con più chiarezza, energia e una leadership più autentica</p>
+
+    <a class="teacher-chip" href="#insegnante">
+      <img src="images/02.webp" alt="Eraldo e Komal">
+      <span>Condotto da <b>Eraldo e Komal</b></span>
+    </a>
+
+    <div class="hero-meta">
+      <div><b>Dal 9 all'11 ottobre 2026</b>Due notti, pensione completa</div>
+      <div><b>Valle Benedetta Retreat Center</b>Livorno, Toscana</div>
+      <div><b>In italiano</b>Cucina vegana inclusa</div>
+    </div>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://booking.vallebenedetta.org/it/product/leadership-naturale" target="_blank" rel="noopener">Prenota il tuo posto</a>
+      <a class="btn btn-outline on-dark" href="https://wa.me/3403952921" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<div class="reflection">
+  <p>Il problema non è fare troppo, ma farlo senza essere più in te. Il prossimo passo non si conquista spingendo di più, ma tornando a casa in te stesso.</p>
+</div>
+
+<div class="facts wrap" style="max-width:1140px;margin:0 auto;padding:0;">
+  <div class="fact"><div class="label">Quando</div><div class="value">9, 10 e 11 ottobre 2026</div></div>
+  <div class="fact"><div class="label">Dove</div><div class="value">Villa Sambuca, Valle Benedetta</div></div>
+  <div class="fact"><div class="label">Orari</div><div class="value">Check in venerdì dalle 15:00, inizio ore 17:00. Check out domenica entro le 14:30</div></div>
+  <div class="fact"><div class="label">Lingua</div><div class="value">Italiano</div></div>
+  <div class="fact"><div class="label">Incluso</div><div class="value">Pensione completa vegana, 2 notti, pratiche e insegnamenti, tea e snack nelle pause</div></div>
+</div>
+
+<section id="percorso">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Il percorso del ritiro</h2>
+    </div>
+    <div class="split">
+      <div class="split-text">
+        <p>Il ritiro combina la saggezza antica della tradizione millenaria Dzogchen con le tecniche contemporanee più efficaci, per aiutarti a trovare forza e calma proprio nelle situazioni che di solito eviteresti.</p>
+        <p>Dentro di te esiste un punto di riposo che dona una forza, una calma rigenerante e una stabilità come una montagna: il ritiro ti accompagna a riscoprirlo, insieme a Eraldo e Komal.</p>
+      </div>
+      <div class="split-media">
+        <img src="images/03.webp" alt="Vista sulla vallata dai boschi di Valle Benedetta">
+      </div>
+    </div>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="https://booking.vallebenedetta.org/it/product/leadership-naturale" target="_blank" rel="noopener">Prenota ora</a>
+      <a class="btn btn-outline" href="https://wa.me/3403952921" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-paper2" id="cosa-vivrai">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Cosa vivrai</h2>
+      <p class="lede">Un percorso che parte dal corpo e dal respiro per arrivare a una nuova qualità di presenza. Durante il ritiro si alterneranno:</p>
+    </div>
+    <ul class="practice-list">
+      <li><span class="mark"></span>Pratiche guidate ispirate alla tradizione Dzogchen</li>
+      <li><span class="mark"></span>Meditazioni orientate al radicamento e alla presenza</li>
+      <li><span class="mark"></span>Esercizi di respirazione e consapevolezza corporea</li>
+      <li><span class="mark"></span>Momenti di silenzio e ascolto interiore</li>
+      <li><span class="mark"></span>Spazi di confronto e condivisione tra leader</li>
+    </ul>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="https://booking.vallebenedetta.org/it/product/leadership-naturale" target="_blank" rel="noopener">Prenota ora</a>
+      <a class="btn btn-outline" href="https://wa.me/3403952921" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="contesto">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Il contesto</div>
+      <h2>Villa Sambuca, Valle Benedetta Retreat Center</h2>
+      <p class="lede">Valle Benedetta non è un singolo edificio, ma un ecosistema di spazi pensati per accoglierti, ispirarti e farti sentire a casa. Ogni luogo ha una propria vocazione e insieme raccontano una comunità che si costruisce ogni giorno, attraverso l'ascolto, la cura reciproca e il desiderio condiviso di far fiorire la vita. Chi lo desidera può anche prendere parte ai lavori della terra, alla cucina o mettere le proprie competenze al servizio dei progetti del centro.</p>
+    </div>
+
+    <div class="carousel-wrap">
+      <div class="carousel" id="placeCarousel">
+        <div class="place-card">
+          <div class="place-frame"><img src="images/04.webp" alt="Villa Sambuca, facciata immersa nel verde"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/05.webp" alt="Facciata in pietra di uno degli edifici di Valle Benedetta"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/06.webp" alt="Terrazza coperta con vista sul bosco"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/07.webp" alt="Sala comune con grandi vetrate sul verde"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/08.webp" alt="Sala pratica con tappetini e cuscini pronti"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/09.webp" alt="Gruppo durante una sessione di pratica"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/10.webp" alt="Meditazione nel bosco di Valle Benedetta"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/03.webp" alt="Vista sulla costa dai sentieri di Valle Benedetta"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/11.webp" alt="Le colline toscane viste da Valle Benedetta"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/12.webp" alt="Due ospiti sorridenti in un campo di lavanda"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/13.webp" alt="Mani al lavoro tra erbe e fiori dell'orto"></div>        </div>
+        <div class="place-card">
+          <div class="place-frame"><img src="images/14.webp" alt="Luce che filtra tra le foglie del bosco"></div>        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-btn" id="placePrev" aria-label="Immagine precedente">&#8592;</button>
+        <button class="carousel-btn" id="placeNext" aria-label="Immagine successiva">&#8594;</button>
+      </div>
+    </div>
+
+    <div class="section-cta">
+      <a class="btn btn-primary" href="https://booking.vallebenedetta.org/it/product/leadership-naturale" target="_blank" rel="noopener">Prenota ora</a>
+      <a class="btn btn-outline" href="https://wa.me/3403952921" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<div class="food" id="cucina">
+  <img src="images/15.webp" alt="Colazione con frutta di stagione e pancake, Valle Benedetta">
+  <img src="images/16.webp" alt="Piatto vegetale con tofu e verdure, cucina di Valle Benedetta">
+  <div class="food-copy">
+    <h3>Il cibo fa parte della pratica</h3>
+    <p>La cucina di Valle Benedetta è vegetale e stagionale. Buona parte degli ingredienti arriva dai nostri orti rigenerativi e dal lavoro quotidiano dell'azienda agricola, insieme ad Alla Serra, il bar agricolo del progetto. I pasti accompagnano il ritmo delle giornate, nutrienti, leggeri, rispettosi dei tempi del corpo.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="split reverse">
+      <div class="split-media">
+        <img src="images/17.webp" alt="Momento di raccoglimento in una delle stanze di Villa Sambuca">
+      </div>
+      <div class="split-text" id="chi-rivolto">
+        <h2 style="margin-bottom:24px;">A chi è rivolto</h2>
+        <p>Il ritiro è pensato per chi ha una missione, è motivato e ha già raggiunto molto, ma sente che qualcosa dentro di sé manca. È indicato in particolare per chi:</p>
+        <p>Si chiede come dare di più senza esaurirsi e senza perdere sé stesso per strada, si accorge di essere quasi sempre in modalità fare e quasi mai in modalità essere, vive sfide importanti e desidera portare più radicamento, lucidità e presenza nelle conversazioni difficili e nelle decisioni, o sente la pressione di mantenere alti risultati mentre dentro cresce un desiderio di libertà e sollievo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-paper2 tight" id="cosa-potrai-portare">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Cosa potrai portare nella vita quotidiana</h2>
+    </div>
+    <ul class="practice-list">
+      <li><span class="mark"></span><b>Energia sostenibile</b> — la capacità di guidare gli altri senza esaurirti, con un modo di condurre che nasce dal riposo e non dallo sforzo</li>
+      <li><span class="mark"></span><b>Rifugio interiore</b> — l'accesso a una fonte di lucidità e forza tranquilla, da cui nasce un impatto autentico</li>
+      <li><span class="mark"></span><b>Espansione nelle sfide</b> — la capacità di affrontare le difficoltà come occasioni di crescita, invece che di contrazione</li>
+      <li><span class="mark"></span><b>Relazioni potenzianti</b> — la capacità di trasformare anche le relazioni difficili in carburante per la tua crescita e quella del tuo team</li>
+    </ul>
+  </div>
+</section>
+
+<section id="programma">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Programma</h2>
+      <p class="lede">Il programma è indicativo e potrà variare in base al lavoro del gruppo, seguendo il ritmo naturale delle pratiche guidate da Eraldo e Komal.</p>
+    </div>
+    <div class="timeline">
+      <div class="day">
+        <h3>Venerdì</h3>
+        <div class="slot">
+          <div class="time">Dalle 15:00</div>
+          <div class="what">Check in</div>
+        </div>
+        <div class="slot">
+          <div class="time">17:00</div>
+          <div class="what">Inizio del ritiro</div>
+        </div>
+      </div>
+      <div class="day">
+        <h3>Sabato</h3>
+        <div class="slot">
+          <div class="time">Giornata</div>
+          <div class="what">Pratiche e insegnamenti con Eraldo e Komal, con pause per tea e snack</div>
+        </div>
+      </div>
+      <div class="day">
+        <h3>Domenica</h3>
+        <div class="slot">
+          <div class="time">Mattina</div>
+          <div class="what">Sessione conclusiva</div>
+        </div>
+        <div class="slot">
+          <div class="time">Entro le 14:30</div>
+          <div class="what">Check out</div>
+        </div>
+      </div>
+    </div>
+    <p class="prog-note">Il numero di posti disponibili è limitato, per tutelare la qualità della pratica e l'attenzione dedicata al gruppo. La prenotazione è sempre obbligatoria.</p>
+    <div class="section-cta" style="text-align:left;margin-top:32px;">
+      <a class="btn btn-primary" href="https://booking.vallebenedetta.org/it/product/leadership-naturale" target="_blank" rel="noopener">Prenota il tuo posto</a>
+      <a class="btn btn-outline" href="https://wa.me/3403952921" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="insegnante">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>L'insegnante</h2>
+    </div>
+    <div class="teacher">
+      <img src="images/18.webp" alt="Ritratto di Eraldo e Komal">
+      <div class="teacher-text">
+        <h3>Eraldo e Komal</h3>
+        <div class="teacher-role">Guide del ritiro, imprenditori e leader in ambito spirituale</div>
+        <p>Conosciamo tutto questo perché ci siamo passati. Siamo imprenditori e leader in ambito spirituale da decenni: abbiamo vissuto tutte le sfide, le sofferenze, le fatiche e gli sforzi che accompagnano chi prende l'impegno di guidare gli altri.</p>
+        <p>Durante il ritiro accompagniamo il gruppo attraverso la tradizione Dzogchen e tecniche contemporanee, per aiutarti a ritrovare radicamento, lucidità e presenza, sia nella leadership che nella vita quotidiana.</p>
+        <div class="section-cta" style="text-align:left;margin-top:28px;">
+          <a class="btn btn-outline" href="https://booking.vallebenedetta.org/it/product/leadership-naturale" target="_blank" rel="noopener">Prenota ora</a>
+      <a class="btn btn-outline" href="https://wa.me/3403952921" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partecipazione">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">I costi</div>
+      <h2>Il tuo investimento</h2>
+      <p class="lede">Il costo del programma è indipendente dall'alloggio, che varia in base alla tipologia di camera scelta.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card featured">
+        <h3>Il programma</h3>
+        <div class="tag">Attività, pratiche e conduzione</div>
+        <p>Il costo del ritiro comprende tutte le attività, le pratiche e la conduzione dell'esperienza con Eraldo e Komal, alloggio escluso.</p>
+        <div class="figure">€300</div>
+      </div>
+      <div class="price-card">
+        <h3>Camera quadrupla</h3>
+        <div class="tag">Pensione completa, a persona</div>
+        <p>Sistemazione condivisa fino a 4 persone, con pensione completa vegana per tutta la durata del ritiro.</p>
+        <div class="figure">€90 a persona, a notte</div>
+      </div>
+      <div class="price-card">
+        <h3>Camera doppia</h3>
+        <div class="tag">Pensione completa, a persona</div>
+        <p>Sistemazione doppia, con pensione completa vegana per tutta la durata del ritiro.</p>
+        <div class="figure">Da €115 a persona, a notte</div>
+      </div>
+      <div class="price-card">
+        <h3>Camera singola</h3>
+        <div class="tag">Pensione completa, a persona</div>
+        <p>Sistemazione singola, con pensione completa vegana per tutta la durata del ritiro.</p>
+        <div class="figure">Da €180 a persona, a notte</div>
+      </div>
+    </div>
+    <p class="prog-note">Tutti i dettagli e le disponibilità delle camere sono consultabili direttamente nella pagina di prenotazione.</p>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="https://booking.vallebenedetta.org/it/product/leadership-naturale" target="_blank" rel="noopener">Prenota ora</a>
+      <a class="btn btn-outline" style="margin-left:16px;" href="https://wa.me/3403952921" target="_blank" rel="noopener">Scrivi su WhatsApp per informazioni</a>
+    </div>
+  </div>
+</section>
+
+<section id="recensioni" class="bg-paper2">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Cosa dicono di noi</h2>
+      <p class="lede">Voci di chi ha partecipato ai ritiri di Valle Benedetta.</p>
+    </div>
+
+    <div class="carousel-wrap">
+      <div class="carousel" id="reviewCarousel">
+        <div class="review-card">
+          <p class="quote">Un luogo pieno di magia e armonia, dove si percepiscono in ogni dettaglio la passione, la cura e l'entusiasmo di chi lo ha sognato e realizzato, Eraldo e Komal. Non è solo un posto in cui soggiornare, ma un'esperienza che lascia il segno. A pochi minuti si trova anche Alla Serra, dove si può cenare in un'atmosfera altrettanto speciale. L'orto annesso regala ingredienti straordinari, e lo chef Simone, insieme al suo fantastico team, trasforma ogni piatto in un'esperienza semplice, autentica e memorabile. La colazione è semplicemente favolosa, resa ancora più speciale dalla bravissima Vicky e dalla sua crostata appena sfornata, che sa di casa e di coccole. Spero di tornare presto, magari in occasione di uno degli yoga retreat che organizzano, perché questo è un luogo che invita a rallentare, ritrovare equilibrio e riconnettersi con sé stessi. A pochi chilometri da Livorno, un'oasi fuori dal tempo che consiglio di cuore a chiunque sia alla ricerca di bellezza, pace e autenticità.</p>
+          <button class="read-more">Leggi tutto</button>
+          <div class="who">Recensione di un ospite</div>
+        </div>
+        <div class="review-card">
+          <p class="quote">Un'oasi di pace immersa nel verde delle colline livornesi, ideale per staccare la spina. L'ambiente curato, gli interni naturali della stanza, le ampie vetrate affacciate sul bosco. E una colazione, vegetariana e sanissima (grazie Vicky), che è una vera delizia. Grazie di cuore per l'accoglienza a Eraldo. Un posto delizioso in cui tornare, nel frattempo si può avere la ricetta della torta di avena?</p>
+          <button class="read-more">Leggi tutto</button>
+          <div class="who">Recensione di un ospite</div>
+        </div>
+        <div class="review-card">
+          <p class="quote">Non ci sono parole per descrivere l'esperienza vissuta in questa magnifica struttura. Davvero unica nel suo genere, pulita ed accogliente, immersa nel verde di una stupenda valle, è il luogo perfetto per staccare la spina e dedicarsi a sé stessi. Consiglio a tutti coloro che sono alla ricerca di un posto autentico gestito da persone rispettose ed altrettanto accoglienti. Non vedo l'ora di tornare.</p>
+          <button class="read-more">Leggi tutto</button>
+          <div class="who">Recensione di un ospite</div>
+        </div>
+        <div class="review-card">
+          <p class="quote">Posto davvero bellissimo, struttura nuova, curata e immersa nella natura. Si respira tranquillità fin dal primo momento. Lo staff è super gentile e ti fa sentire subito a casa. Abbiamo mangiato benissimo, con tanti ingredienti freschi direttamente dall'orto. Si vede che tutto è fatto con passione e attenzione ai dettagli. Non vediamo l'ora di tornare.</p>
+          <button class="read-more">Leggi tutto</button>
+          <div class="who">Recensione di un ospite</div>
+        </div>
+        <div class="review-card">
+          <p class="quote">Cosa dire, il posto ideale per il tuo ritiro. Immerso nella pineta mediterranea, a 15 minuti dal mare e a 20 dall'aeroporto di Pisa, Valle Benedetta Retreat si trova in una posizione fantastica, che tu desideri il silenzio e la magia del bosco piuttosto che visitare le città d'arte o farti un tuffo nelle acque cristalline della Toscana, qui non hai che da scegliere. L'energia del luogo è fantastica e l'accoglienza di Eraldo e Komal e dello staff renderanno la tua vacanza ritiro un'esperienza unica e indimenticabile. Anche il cibo è delizioso e arriva per gran parte dal loro stesso orto e dalle torri idroponiche. Nella proprietà c'è perfino una cappella. Insomma, vorrei trovare un difetto ma non c'è.</p>
+          <button class="read-more">Leggi tutto</button>
+          <div class="who">Recensione di un ospite</div>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-btn" id="reviewPrev" aria-label="Recensione precedente">&#8592;</button>
+        <button class="carousel-btn" id="reviewNext" aria-label="Recensione successiva">&#8594;</button>
+      </div>
+    </div>
+
+    <div style="margin-top:64px;">
+      <h3 style="font-size:22px;margin-bottom:24px;">I ritiri raccontati da chi li ha vissuti</h3>
+      <div class="carousel-wrap">
+        <div class="carousel" id="videoCarousel">
+          <div class="video-card">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/HK0zXS3Bg10" title="Che cosa ti porti a casa dopo questo seminario? Valle Benedetta Retreat Center" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-title">Che cosa ti porti a casa dopo questo seminario?</div>
+          </div>
+          <div class="video-card">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/psQIqzeGHuU" title="Come ti sei sentita qui a Valle Benedetta Retreat Center?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-title">Come ti sei sentita qui a Valle Benedetta?</div>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="videoPrev" aria-label="Video precedente">&#8592;</button>
+          <button class="carousel-btn" id="videoNext" aria-label="Video successivo">&#8594;</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="faq" class="bg-paper2">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Domande frequenti</h2>
+      <p class="lede">Le domande più comuni di chi partecipa per la prima volta a un ritiro.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Che tipo di esperienza posso aspettarmi a Valle Benedetta?<span class="plus"></span></summary>
+        <div class="answer">Valle Benedetta è un luogo pensato per rallentare, ascoltare e riconnetterti con te stesso. I ritiri offrono uno spazio protetto, immerso nella natura, dove pratiche come meditazione, movimento consapevole e momenti di silenzio sostengono un processo di rigenerazione profonda, personale e condivisa.</div>
+      </details>
+      <details class="faq-item">
+        <summary>È necessario avere esperienza in meditazione?<span class="plus"></span></summary>
+        <div class="answer">No. Il ritiro è aperto sia a chi è alla prima esperienza sia a chi pratica da tempo. Ogni proposta è guidata con attenzione e rispetto dei diversi ritmi, lasciando a ciascuno la libertà di partecipare secondo le proprie possibilità e il proprio sentire.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Com'è l'atmosfera durante un ritiro?<span class="plus"></span></summary>
+        <div class="answer">L'atmosfera è semplice, silenziosa e accogliente. Valle Benedetta è una comunità temporanea basata su rispetto, ascolto e cura reciproca. Non c'è nulla da dimostrare, puoi essere esattamente come sei.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Valle Benedetta segue una religione o una tradizione spirituale specifica?<span class="plus"></span></summary>
+        <div class="answer">No. Valle Benedetta non appartiene a nessuna religione né a una tradizione spirituale specifica. Il centro è uno spazio aperto e inclusivo, che accoglie persone, insegnanti e pratiche provenienti da percorsi, culture e tradizioni diverse. Ciò che ci unisce non è un credo, ma il desiderio condiviso di vivere esperienze di consapevolezza, ascolto e trasformazione autentica, nel rispetto reciproco e della diversità di ciascuno.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Che tipo di sistemazione è prevista?<span class="plus"></span></summary>
+        <div class="answer">Le camere sono confortevoli, essenziali e immerse nella quiete della natura. Sono disponibili camere singole, doppie o condivise, a seconda della scelta effettuata al momento della prenotazione. Tutti gli spazi sono pensati per favorire riposo e rigenerazione.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Posso condividere la camera anche se partecipo da solo o sola?<span class="plus"></span></summary>
+        <div class="answer">Sì, certamente. Valle Benedetta è anche un luogo di incontro e condivisione. Se viaggi da solo o sola e desideri condividere la camera, ti verrà assegnata una sistemazione condivisa con una persona dello stesso genere che partecipa allo stesso ritiro. Molti ospiti scoprono che condividere lo spazio diventa parte dell'esperienza, un'occasione semplice e naturale per sentirsi accolti e parte della comunità.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Cosa porto con me per il ritiro?<span class="plus"></span></summary>
+        <div class="answer">Ti consigliamo abiti comodi, scarpe per camminare nella natura, calzature dedicate solo all'uso interno (ciabatte, calzini antiscivolo e simili) per mantenere l'ambiente pulito, una giacca per la sera e tutto ciò che ti aiuta a sentirti a tuo agio. Tappetini e cuscini per la pratica sono disponibili in loco. Il resto puoi lasciarlo andare.</div>
+      </details>
+      <details class="faq-item">
+        <summary>I pasti sono inclusi? Che tipo di cucina offrite?<span class="plus"></span></summary>
+        <div class="answer">Sì, i pasti sono inclusi. La cucina è vegetariana, stagionale e preparata con ingredienti biologici e rigenerativi, molti dei quali provenienti dalla nostra terra. Il cibo è parte integrante dell'esperienza di cura e presenza.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Posso usare il telefono e i dispositivi elettronici?<span class="plus"></span></summary>
+        <div class="answer">Valle Benedetta invita a un uso consapevole della tecnologia. Alcuni ritiri propongono un vero e proprio digital detox, altri lasciano libertà personale. In ogni caso, incoraggiamo a ridurre le distrazioni per favorire una presenza più profonda.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Come si raggiunge Valle Benedetta?<span class="plus"></span></summary>
+        <div class="answer">Il centro si trova sulle colline sopra Livorno ed è facilmente raggiungibile in auto. Le stazioni e gli aeroporti più vicini sono Livorno e Pisa. Su richiesta possono essere organizzati transfer condivisi.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Qual è la politica di cancellazione del ritiro?<span class="plus"></span></summary>
+        <div class="answer">La partecipazione al ritiro richiede un impegno di presenza e organizzazione condivisa. In caso di cancellazione, le quote versate non sono rimborsabili, poiché servono a sostenere i costi organizzativi già avviati (struttura, cucina, staff e facilitazione). Se non puoi più partecipare, puoi cedere il tuo posto a un'altra persona, previo accordo con l'organizzazione del ritiro e comunicazione tempestiva.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Cosa si può fare nei dintorni di Valle Benedetta?<span class="plus"></span></summary>
+        <div class="answer">Valle Benedetta è immersa in un paesaggio naturale ricco e silenzioso, ideale per camminate nel bosco, momenti di contemplazione e contatto profondo con la natura. Nei dintorni è possibile esplorare sentieri panoramici, raggiungere antichi luoghi di raccoglimento come monasteri e acquedotti storici, oppure scendere verso il mare per una passeggiata lungo la costa di Livorno. Per chi desidera ampliare l'esperienza, sono facilmente raggiungibili anche Pisa, Lucca e Firenze, così come borghi marinari, terme e realtà enogastronomiche del territorio.</div>
+      </details>
+    </div>
+    <div class="section-cta">
+      <a class="btn btn-primary" href="https://booking.vallebenedetta.org/it/product/leadership-naturale" target="_blank" rel="noopener">Prenota ora</a>
+      <a class="btn btn-outline" href="https://wa.me/3403952921" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<div class="final-cta">
+  <h2>Il tuo posto ti aspetta a Villa Sambuca</h2>
+  <p>Dal 9 all'11 ottobre 2026, un ritiro per ritrovare radicamento, lucidità e presenza.</p>
+  <div class="final-actions">
+    <a class="btn" style="background:#FBF4E8;color:var(--terracotta-dark);" href="https://booking.vallebenedetta.org/it/product/leadership-naturale" target="_blank" rel="noopener">Prenota il tuo posto</a>
+    <a class="btn btn-outline on-dark" href="https://wa.me/3403952921" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col footer-brand">
+      <a class="logo-mark" href="#top" aria-label="Valle Benedetta">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTg3IiBoZWlnaHQ9Ijg4IiB2aWV3Qm94PSIwIDAgMTg3IDg4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMTI0MDVfNzU0MikiPgo8cGF0aCBkPSJNMTAwLjc5NiAxNS4yNTg5TDEwMC40NTkgMTMuMTA5Qzk3LjcyMzUgMTEuODUyMiA5NS44NzM4IDkuODc0OTQgOTUuNjI1NSA3LjIzNjhDOTUuNTczNiA2LjY5MjgzIDk1LjgyNTcgNS44Njg1MyA5NS40OTAyIDUuNDM0MUM5Ni4xNjY3IDQuODc3MTQgOTYuNTk2NyA0LjAzNjEyIDk2LjU5NjcgMy4wOTQ4NkM5Ni41OTY3IDEuNDE2NTUgOTUuMjMwOCAwLjA1NzU1NjIgOTMuNTQ0MiAwLjA1NzU1NjJDOTEuODU3NyAwLjA1NzU1NjIgOTAuNDkxOCAxLjQxNjU1IDkwLjQ5MTggMy4wOTQ4NkM5MC40OTE4IDQuMDM2MTIgOTAuOTIxOCA0Ljg3NzE0IDkxLjU5ODIgNS40MzQxQzkxLjI2MjggNS44Njg1MyA5MS41MTQ4IDYuNjkyODMgOTEuNDYzIDcuMjM2OEM5MS4yMTQ2IDkuODczMDkgODkuMzY1IDExLjg1MjIgODYuNjI5NSAxMy4xMDlMODYuMjkyMiAxNS4yNTg5TDcwLjIxMDkgMjEuNzY0Mkw3MS41MDQ2IDI2LjA0MTdWNTQuNDk4N0gxMTUuNTgyVjI2LjA0MTdMMTE2Ljg3NiAyMS43NjQyTDEwMC43OTQgMTUuMjU4OUgxMDAuNzk2Wk05My40NjQ1IDIyLjczMTVIOTMuNjI1OEM5My42MjU4IDIyLjczMTUgMTAyLjQ0OSAyMi4zMTc1IDEwMi44MjQgMzAuOTI2M0MxMDEuMTQ3IDMwLjU1ODcgOTcuMTQ4OSAyOS40MDU3IDk1LjU5NzcgMjYuNTQzSDkxLjQ5NDVDODkuOTQzMiAyOS40MDU3IDg1Ljk0NTYgMzAuNTU4NyA4NC4yNjg0IDMwLjkyNjNDODQuNjQyNyAyMi4zMTc1IDkzLjQ2NjQgMjIuNzMxNSA5My40NjY0IDIyLjczMTVIOTMuNDY0NVpNODQuMjUzNSA1MS45NTUzVjMyLjYzNjFIOTIuMDIyN0M5Mi4yMTU0IDMxLjk4MDggOTIuODI1MSAzMS41MDE4IDkzLjU0NjEgMzEuNTAxOEM5NC4yNjcgMzEuNTAxOCA5NC44NzQ5IDMxLjk4MDggOTUuMDY5NSAzMi42MzYxSDEwMi44MzlWNTEuOTU1M0g4NC4yNTU0SDg0LjI1MzVaIiBmaWxsPSIjODMxNzE4Ii8+CjxwYXRoIGQ9Ik05My41ODc3IDQ4LjE0MTlDOTQuNDkwMyA0OC4xNDE5IDk1LjIyMjQgNDcuNDE0MiA5NS4yMjI0IDQ2LjUxMzdIOTEuOTUzMUM5MS45NTMxIDQ3LjQxMjMgOTIuNjg1MiA0OC4xNDE5IDkzLjU4NzcgNDguMTQxOVoiIGZpbGw9IiM4MzE3MTgiLz4KPHBhdGggZD0iTTk0LjU0NjYgMzMuMDQ4M0M5NC41NDY2IDMzLjAzNzEgOTQuNTUwMyAzMy4wMjc4IDk0LjU1MDMgMzMuMDE4NkM5NC41NTAzIDMyLjQ2NzIgOTQuMSAzMi4wMTc5IDkzLjU0NTggMzIuMDE3OUM5Mi45OTE3IDMyLjAxNzkgOTIuNTQxMyAzMi40NjUzIDkyLjU0MTMgMzMuMDE4NkM5Mi41NDEzIDMzLjAyOTcgOTIuNTQzMiAzMy4wMzkgOTIuNTQ1IDMzLjA0ODNDODYuNzMzIDMzLjE2NTIgOTEuNTg4NyA0MC4zNzQyIDg2LjY0MjIgNDUuMzIxOEM4Ni42NDIyIDQ1LjMyMTggODYuMDM2MiA0NS45MzgyIDg3LjE3MDQgNDUuOTc5MUg5OS45MjEyQzEwMS4wNTcgNDUuOTM4MiAxMDAuNDQ5IDQ1LjMyMTggMTAwLjQ0OSA0NS4zMjE4Qzk1LjUwMjkgNDAuMzc0MiAxMDAuMzYgMzMuMTY1MiA5NC41NDY2IDMzLjA0ODNaIiBmaWxsPSIjODMxNzE4Ii8+CjxwYXRoIGQ9Ik02LjkxNDQxIDcxLjIwOTRMMTAuNDU5OCA2Mi4wNjIzSDEzLjYyMzRMOC41OTUzNyA3My44OTIxSDUuMTUwMDVMMC4xMzg2NzIgNjIuMDYyM0gzLjQwMjM3TDYuOTE0NDEgNzEuMjA5NFoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNS41MjEzIDczLjg5NEgxMi41MDc4TDE3Ljg2NzYgNjIuMDY0MUgyMS4yMjk1TDI2LjU4OTMgNzMuODk0SDIzLjQ5MjRMMjIuMzkzNCA3MS4zNzQ3SDE2LjU2NjZMMTUuNTE3NiA3My44OTRIMTUuNTIxM1pNMTkuNDk4NSA2NC4zOTk2TDE3LjQ4NCA2OS4xNTQySDIxLjUyOThMMTkuNDk4NSA2NC4zOTk2WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTI4LjIyMjYgNjIuMDY0MUgzMS4xNTI3VjcxLjQ5MTZIMzguMjc2OEwzNy45MjY1IDczLjg5NEgyOC4yMjA3VjYyLjA2NDFIMjguMjIyNloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik00MC4xMDkzIDYyLjA2NDFINDMuMDM5NFY3MS40OTE2SDUwLjE2MzVMNDkuODEzMyA3My44OTRINDAuMTA3NFY2Mi4wNjQxSDQwLjEwOTNaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNTEuOTk0MSA2Mi4wNjQxSDYyLjA4MThWNjQuMjg0NUg1NC44OTA5VjY2Ljc1MzdINjEuNzMzM1Y2OC45NTc1SDU0Ljg5MDlWNzEuNjc1NEg2Mi40NjU0TDYyLjE0ODUgNzMuODk1OUg1MS45OTQxVjYyLjA2NlY2Mi4wNjQxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTY5LjE3NTggNjIuMDY0MUg3NS4wODZDNzguMzcyIDYyLjA2NDEgODAuMDE0IDYzLjA4MTUgODAuMDE0IDY1LjExMjZDODAuMDE0IDY2LjMxNzUgNzkuMzc2NSA2Ny4xNTY2IDc4LjA5OTUgNjcuNjMxOUM3OS42NzQ4IDY4LjE1MTcgODAuNDYyNSA2OS4wODkzIDgwLjQ2MjUgNzAuNDQ4M0M4MC40NjI1IDcxLjU3NTIgODAuMDI4OCA3Mi40MzEgNzkuMTYzMyA3My4wMTU4Qzc4LjI5NzggNzMuNjAwNyA3Ny4wMzIgNzMuODk0IDc1LjM2NzcgNzMuODk0SDY5LjE3NThWNjIuMDY0MVpNNzYuNjUwMiA2NC40MjU2Qzc2LjI5NDQgNjQuMjIxNCA3NS43MjM2IDY0LjExOTMgNzQuOTM1OSA2NC4xMTkzSDcxLjkwNTdWNjYuNzg3Mkg3NS4wNjkzQzc1Ljc5MDMgNjYuNzg3MiA3Ni4zMjQgNjYuNjc3NiA3Ni42NjY5IDY2LjQ1NjdDNzcuMDExNiA2Ni4yMzU4IDc3LjE4NCA2NS44ODg2IDc3LjE4NCA2NS40MTMzQzc3LjE4NCA2NC45MzggNzcuMDA2MSA2NC42MzE3IDc2LjY1MjEgNjQuNDI3NUw3Ni42NTAyIDY0LjQyNTZaTTc3LjYxNTggNzAuMjk5N0M3Ny42MTU4IDY5Ljc1OTUgNzcuNDE1NiA2OS4zNjAzIDc3LjAxNzIgNjkuMTA2Qzc2LjYxNjkgNjguODUxNiA3NS45OTA0IDY4LjcyNTQgNzUuMTM2MSA2OC43MjU0SDcxLjkwNTdWNzEuODQwN0g3NS4xMzYxQzc2LjAxMjcgNzEuODQwNyA3Ni42NDQ3IDcxLjcyIDc3LjAzMzkgNzEuNDc2OEM3Ny40MjMxIDcxLjIzMzYgNzcuNjE1OCA3MC44NDE4IDc3LjYxNTggNzAuMjk5N1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik04Mi43MDcgNjIuMDY0MUg5Mi43OTQ3VjY0LjI4NDVIODUuNjAzOFY2Ni43NTM3SDkyLjQ0NjJWNjguOTU3NUg4NS42MDM4VjcxLjY3NTRIOTMuMTc4M0w5Mi44NjE0IDczLjg5NTlIODIuNzA3VjYyLjA2NlY2Mi4wNjQxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTk1LjMyNjIgNjIuMDY0MUg5Ny45NzI3TDEwNC41ODIgNjkuOTY3NFY2Mi4wNjQxSDEwNy4zNzhWNzMuODk0SDEwNC43MzJMOTguMTIyOCA2NS45NzRWNzMuODk0SDk1LjMyNjJWNjIuMDY0MVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMTAuMjQyIDYyLjA2NDFIMTIwLjMzVjY0LjI4NDVIMTEzLjEzOVY2Ni43NTM3SDExOS45ODFWNjguOTU3NUgxMTMuMTM5VjcxLjY3NTRIMTIwLjcxM0wxMjAuMzk3IDczLjg5NTlIMTEwLjI0MlY2Mi4wNjZWNjIuMDY0MVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMjIuODYxIDYyLjA2NDFIMTI4LjI4OEMxMzAuNTk3IDYyLjA2NDEgMTMyLjM1IDYyLjU2NzIgMTMzLjU0NyA2My41NzE2QzEzNC43NDYgNjQuNTc3OSAxMzUuMzQ1IDY2LjA0NjQgMTM1LjM0NSA2Ny45NzkxQzEzNS4zNDUgNjkuOTExNyAxMzQuNzE1IDcxLjMyNjQgMTMzLjQ1NSA3Mi4zNTMxQzEzMi4xOTQgNzMuMzc5NyAxMzAuMzg5IDczLjg5NCAxMjguMDM2IDczLjg5NEgxMjIuODU3VjYyLjA2NDFIMTIyLjg2MVpNMTMyLjM1IDY3Ljk2MjNDMTMyLjM1IDY1LjU5OSAxMzEuMDA2IDY0LjQxNjQgMTI4LjMyMSA2NC40MTY0SDEyNS43NThWNzEuNTQxOEgxMjguMTIxQzEzMC45NCA3MS41NDE4IDEzMi4zNSA3MC4zNDggMTMyLjM1IDY3Ljk2MjNaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTM3LjY2IDYyLjA2NDFIMTQ3Ljc0OFY2NC4yODQ1SDE0MC41NTdWNjYuNzUzN0gxNDcuMzk5VjY4Ljk1NzVIMTQwLjU1N1Y3MS42NzU0SDE0OC4xMzFMMTQ3LjgxNCA3My44OTU5SDEzNy42NlY2Mi4wNjZWNjIuMDY0MVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNTMuNjQyIDY0LjQ2NjVIMTQ5LjA2NFY2Mi4wNjQxSDE2MS4xNVY2NC40NjY1SDE1Ni41NzJWNzMuODk0SDE1My42NDJWNjQuNDY2NVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNjYuNzc3IDY0LjQ2NjVIMTYyLjE5OVY2Mi4wNjQxSDE3NC4yODVWNjQuNDY2NUgxNjkuNzA3VjczLjg5NEgxNjYuNzc3VjY0LjQ2NjVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTc1Ljg4MyA3My44OTRIMTcyLjg2OUwxNzguMjI5IDYyLjA2NDFIMTgxLjU5MUwxODYuOTUxIDczLjg5NEgxODMuODU0TDE4Mi43NTUgNzEuMzc0N0gxNzYuOTI4TDE3NS44NzkgNzMuODk0SDE3NS44ODNaTTE3OS44NiA2NC4zOTk2TDE3Ny44NDUgNjkuMTU0MkgxODEuODkxTDE3OS44NiA2NC4zOTk2WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTM2LjA0OCA4Mi4zODAyVjg3LjgyOTJIMzUuMDY5NVY4Mi4zODAySDMzLjYwMzVWODEuNDYzMUgzNy41MTRWODIuMzgwMkgzNi4wNDhaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMzkuODM0IDgxLjQ2MzFWODUuMzAwNkMzOS44MzQgODUuNjQ0IDM5Ljg0MzMgODYuMDYzNiA0MC4wMzYgODYuMzk3OEM0MC4yMjY5IDg2LjcyMjcgNDAuNjU4NyA4Ny4wNTY5IDQxLjIyNCA4Ny4wNTY5QzQxLjc4OTMgODcuMDU2OSA0Mi4yMjExIDg2LjcyMjcgNDIuNDEyIDg2LjM5NzhDNDIuNjAyOSA4Ni4wNjM2IDQyLjYxNCA4NS42NDQgNDIuNjE0IDg1LjMwMDZWODEuNDYzMUg0My41OTI2Vjg1LjU1NjhDNDMuNTkyNiA4Ni4wNjE4IDQzLjQ4NjkgODYuNjcyNiA0Mi45OTc2IDg3LjIwNzJDNDIuNjYyMiA4Ny41NjkzIDQyLjA5NjkgODcuOTUxNyA0MS4yMjQgODcuOTUxN0M0MC4zNTExIDg3Ljk1MTcgMzkuNzg1OCA4Ny41NjkzIDM5LjQ1MDQgODcuMjA3MkMzOC45NjExIDg2LjY3MjYgMzguODU1NSA4Ni4wNjE4IDM4Ljg1NTUgODUuNTU2OFY4MS40NjMxSDM5LjgzNFoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik00OC4zNjc4IDgyLjg3NTlDNDguMzEwNCA4Mi43MzMgNDguMjIzMyA4Mi41OTkzIDQ4LjA4MDYgODIuNDc0OUM0Ny44Nzg2IDgyLjMxMzQgNDcuNjY5MSA4Mi4yNDY2IDQ3LjM5MTEgODIuMjQ2NkM0Ni43OTYyIDgyLjI0NjYgNDYuNDkwNCA4Mi41OTkzIDQ2LjQ5MDQgODMuMDA5NkM0Ni40OTA0IDgzLjIwMDggNDYuNTU3MSA4My41MzUgNDcuMTc5OSA4My43ODE5TDQ3LjgyMyA4NC4wNEM0OS4wMDE3IDg0LjUxNzEgNDkuMzI3OSA4NS4xODU1IDQ5LjMyNzkgODUuOTExNEM0OS4zMjc5IDg3LjEyMzcgNDguNDY0MiA4Ny45NTM2IDQ3LjI2NyA4Ny45NTM2QzQ2LjUyOTQgODcuOTUzNiA0Ni4wODgzIDg3LjY3NjkgNDUuNzYyMSA4Ny4zMTQ5QzQ1LjQxNzQgODYuOTMyNSA0NS4yNjM1IDg2LjUxMjkgNDUuMjI0NiA4Ni4wNzQ4TDQ2LjE5MiA4NS44NjVDNDYuMTkyIDg2LjE4MDYgNDYuMzA3IDg2LjQ3NTggNDYuNDYwOCA4Ni42NzYzQzQ2LjY0MjQgODYuOTA0NiA0Ni45MTExIDg3LjA1ODcgNDcuMjk0OCA4Ny4wNTg3QzQ3Ljg4OTcgODcuMDU4NyA0OC4zNDkzIDg2LjYyOTkgNDguMzQ5MyA4NS45ODkzQzQ4LjM0OTMgODUuMzQ4OCA0Ny44NTA4IDg1LjA3MjIgNDcuNDI4MiA4NC45MDE0TDQ2LjgxNDggODQuNjQzNEM0Ni4yODg0IDg0LjQyNDMgNDUuNTExOSA4My45ODQzIDQ1LjUxMTkgODMuMDNDNDUuNTExOSA4Mi4xNzA0IDQ2LjE4MjggODEuMzQ5OSA0Ny4zODE5IDgxLjM0OTlDNDguMDcxMyA4MS4zNDk5IDQ4LjQ2NjEgODEuNjA3OSA0OC42NjYyIDgxLjc3ODdDNDguODM4NiA4MS45MzEgNDkuMDIwMiA4Mi4xNSA0OS4xNTU1IDgyLjQxNzRMNDguMzY5NyA4Mi44NzU5SDQ4LjM2NzhaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNTUuNzY5NSA4Mi45NTJDNTUuMDU5NiA4Mi4zMTM0IDU0LjM5OCA4Mi4yNDY2IDU0LjAzNDcgODIuMjQ2NkM1Mi42NDQ3IDgyLjI0NjYgNTEuNzA1MSA4My4yNjc3IDUxLjcwNTEgODQuNjcxMkM1MS43MDUxIDg2LjA3NDggNTIuNjgzNyA4Ny4wNTY5IDU0LjA0NCA4Ny4wNTY5QzU0LjgxMTMgODcuMDU2OSA1NS40MDYyIDg2LjY2NTEgNTUuNzY5NSA4Ni4zMjE3Vjg3LjQ3NjRDNTUuMTI2MyA4Ny44NTg5IDU0LjQ1NTQgODcuOTUzNiA1NC4wMTQ0IDg3Ljk1MzZDNTIuODU0MiA4Ny45NTM2IDUyLjEyNTggODcuNDI4MiA1MS43NTE0IDg3LjA3NTRDNTEuMDA0NiA4Ni4zNzkyIDUwLjcyNjYgODUuNTY3OSA1MC43MjY2IDg0LjY3MTJDNTAuNzI2NiA4My40OTc5IDUxLjIxNTggODIuNjg2NiA1MS43NTE0IDgyLjE3OTdDNTIuNDEzMSA4MS41NTk2IDUzLjE4MDQgODEuMzQ5OSA1NC4wNjI1IDgxLjM0OTlDNTQuNjQ4MiA4MS4zNDk5IDU1LjIxMzUgODEuNDU1NyA1NS43Njk1IDgxLjgwODRWODIuOTUzOVY4Mi45NTJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNjEuMTE5NyA4Ni4yOTJINTguMzg3OUw1Ny42ODc0IDg3LjgyOTJINTYuNjMyOEw1OS44MTUgODEuMDkxOEw2Mi44NDUxIDg3LjgyOTJINjEuNzkwNkw2MS4xMTk3IDg2LjI5MlpNNjAuNzI2OCA4NS4zNzY3TDU5Ljc3NzkgODMuMjE5NEw1OC43OTAxIDg1LjM3NjdINjAuNzI2OFoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik02NC4xMjg5IDg3LjgyOTJWODEuMDM0M0w2OC43Njk2IDg1Ljg3MjRWODEuNDYzMUg2OS43NDgyVjg4LjIyMDlMNjUuMTA3NSA4My4zODI4Vjg3LjgzMTFINjQuMTI4OVY4Ny44MjkyWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTczLjA5NCA4NS4wNzk3TDcwLjk5NDEgODEuNDYzMUg3Mi4xMDYxTDczLjU4MzIgODQuMDEyMUw3NS4wNjAzIDgxLjQ2MzFINzYuMTcyM0w3NC4wNzI1IDg1LjA3OTdWODcuODI5Mkg3My4wOTRWODUuMDc5N1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik04MS4yNzI1IDgxLjQ2MzFDODIuMDQ5MSA4MS40NjMxIDgyLjU0NzYgODEuNTU3OCA4Mi45NTkgODEuODM0NEM4My42NTk2IDgyLjMwMjMgODMuNzE3IDgzLjA1NiA4My43MTcgODMuMzMyNkM4My43MTcgODQuMjQ5OCA4My4xNTE4IDg0LjkxNjMgODIuMjk3NCA4NS4xMDc1TDg0LjI5MTYgODcuODI3M0g4My4xMTI5TDgxLjI4MTggODUuMjIyNkg4MS4xMDk0Vjg3LjgyNzNIODAuMTMwOVY4MS40NjEzSDgxLjI3MjVWODEuNDYzMVpNODEuMTA5NCA4NC4zODM1SDgxLjQxNzFDODEuNjg1OCA4NC4zODM1IDgyLjc3OTIgODQuMzU1NiA4Mi43NzkyIDgzLjM0MzhDODIuNzc5MiA4Mi40NDcxIDgxLjkyNjcgODIuMzYxNyA4MS40NDY3IDgyLjM2MTdIODEuMTExM1Y4NC4zODUzTDgxLjEwOTQgODQuMzgzNVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik04OS4yNTkyIDgyLjM4MDNIODYuNzA5VjgzLjk5MzZIODkuMTgzMlY4NC45MTA3SDg2LjcwOVY4Ni45MTU4SDg5LjI1OTJWODcuODMyOUg4NS43MzA1VjgxLjQ2NjhIODkuMjU5MlY4Mi4zODRWODIuMzgwM1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik05Mi43Nzg1IDgyLjM4MDNWODcuODI5Mkg5MS44VjgyLjM4MDNIOTAuMzM0VjgxLjQ2MzFIOTQuMjQ0NVY4Mi4zODAzSDkyLjc3ODVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNOTYuNzI3NiA4MS40NjMxQzk3LjUwNDEgODEuNDYzMSA5OC4wMDI3IDgxLjU1NzggOTguNDE0MSA4MS44MzQ0Qzk5LjExNDcgODIuMzAyMyA5OS4xNzIxIDgzLjA1NiA5OS4xNzIxIDgzLjMzMjZDOTkuMTcyMSA4NC4yNDk4IDk4LjYwNjggODQuOTE2MyA5Ny43NTI1IDg1LjEwNzVMOTkuNzQ2NiA4Ny44MjczSDk4LjU2NzlMOTYuNzM2OCA4NS4yMjI2SDk2LjU2NDVWODcuODI3M0g5NS41ODU5VjgxLjQ2MTNIOTYuNzI3NlY4MS40NjMxWk05Ni41NjQ1IDg0LjM4MzVIOTYuODcyMUM5Ny4xNDA5IDg0LjM4MzUgOTguMjM0MyA4NC4zNTU2IDk4LjIzNDMgODMuMzQzOEM5OC4yMzQzIDgyLjQ0NzEgOTcuMzgxOCA4Mi4zNjE3IDk2LjkwMTggODIuMzYxN0g5Ni41NjYzVjg0LjM4NTNMOTYuNTY0NSA4NC4zODM1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTEwNC43MTYgODIuMzgwMkgxMDIuMTY2VjgzLjk5MzZIMTA0LjY0Vjg0LjkxMDdIMTAyLjE2NlY4Ni45MTU4SDEwNC43MTZWODcuODMyOUgxMDEuMTg4VjgxLjQ2NjhIMTA0LjcxNlY4Mi4zODRWODIuMzgwMloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMTAuMjE3IDg2LjI5MkgxMDcuNDg2TDEwNi43ODUgODcuODI5MkgxMDUuNzNMMTA4LjkxMyA4MS4wOTE4TDExMS45NDMgODcuODI5MkgxMTAuODg4TDExMC4yMTcgODYuMjkyWk0xMDkuODI0IDg1LjM3NjdMMTA4Ljg3NiA4My4yMTk0TDEwNy44ODggODUuMzc2N0gxMDkuODI0WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTExNC42MiA4Mi4zODAzVjg3LjgyOTJIMTEzLjY0MlY4Mi4zODAzSDExMi4xNzZWODEuNDYzMUgxMTYuMDg2VjgyLjM4MDNIMTE0LjYyWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTEyNC44NzcgODIuOTUyQzEyNC4xNjcgODIuMzEzNCAxMjMuNTA1IDgyLjI0NjYgMTIzLjE0MiA4Mi4yNDY2QzEyMS43NTIgODIuMjQ2NiAxMjAuODEyIDgzLjI2NzcgMTIwLjgxMiA4NC42NzEyQzEyMC44MTIgODYuMDc0OCAxMjEuNzkxIDg3LjA1NjkgMTIzLjE1MSA4Ny4wNTY5QzEyMy45MTkgODcuMDU2OSAxMjQuNTEyIDg2LjY2NTEgMTI0Ljg3NyA4Ni4zMjE3Vjg3LjQ3NjRDMTI0LjIzNCA4Ny44NTg5IDEyMy41NjMgODcuOTUzNiAxMjMuMTIyIDg3Ljk1MzZDMTIxLjk2MSA4Ny45NTM2IDEyMS4yMzMgODcuNDI4MiAxMjAuODU5IDg3LjA3NTRDMTIwLjExMiA4Ni4zNzkyIDExOS44MzIgODUuNTY3OSAxMTkuODMyIDg0LjY3MTJDMTE5LjgzMiA4My40OTc5IDEyMC4zMjEgODIuNjg2NiAxMjAuODU5IDgyLjE3OTdDMTIxLjUyIDgxLjU1OTYgMTIyLjI4OCA4MS4zNDk5IDEyMy4xNyA4MS4zNDk5QzEyMy43NTYgODEuMzQ5OSAxMjQuMzIxIDgxLjQ1NTcgMTI0Ljg3NyA4MS44MDg0VjgyLjk1MzlWODIuOTUyWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTEzMC4wOTMgODIuMzgwMkgxMjcuNTQzVjgzLjk5MzZIMTMwLjAxN1Y4NC45MTA3SDEyNy41NDNWODYuOTE1OEgxMzAuMDkzVjg3LjgzMjlIMTI2LjU2NFY4MS40NjY4SDEzMC4wOTNWODIuMzg0VjgyLjM4MDJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTMxLjg0IDg3LjgyOTJWODEuMDM0M0wxMzYuNDgxIDg1Ljg3MjRWODEuNDYzMUgxMzcuNDU5Vjg4LjIyMDlMMTMyLjgxOCA4My4zODI4Vjg3LjgzMTFIMTMxLjg0Vjg3LjgyOTJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTQxLjI0MyA4Mi4zODAzVjg3LjgyOTJIMTQwLjI2NVY4Mi4zODAzSDEzOC43OTlWODEuNDYzMUgxNDIuNzA5VjgyLjM4MDNIMTQxLjI0M1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNDcuNTgxIDgyLjM4MDNIMTQ1LjAzMVY4My45OTM2SDE0Ny41MDVWODQuOTEwN0gxNDUuMDMxVjg2LjkxNThIMTQ3LjU4MVY4Ny44MzI5SDE0NC4wNTNWODEuNDY2OEgxNDcuNTgxVjgyLjM4NFY4Mi4zODAzWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTE1MC40NjggODEuNDYzMUMxNTEuMjQ0IDgxLjQ2MzEgMTUxLjc0MyA4MS41NTc4IDE1Mi4xNTQgODEuODM0NEMxNTIuODU1IDgyLjMwMjMgMTUyLjkxMiA4My4wNTYgMTUyLjkxMiA4My4zMzI2QzE1Mi45MTIgODQuMjQ5OCAxNTIuMzQ3IDg0LjkxNjMgMTUxLjQ5MyA4NS4xMDc1TDE1My40ODcgODcuODI3M0gxNTIuMzA4TDE1MC40NzcgODUuMjIyNkgxNTAuMzA1Vjg3LjgyNzNIMTQ5LjMyNlY4MS40NjEzSDE1MC40NjhWODEuNDYzMVpNMTUwLjMwNSA4NC4zODM1SDE1MC42MTJDMTUwLjg4MSA4NC4zODM1IDE1MS45NzUgODQuMzU1NiAxNTEuOTc1IDgzLjM0MzhDMTUxLjk3NSA4Mi40NDcxIDE1MS4xMjIgODIuMzYxNyAxNTAuNjQyIDgyLjM2MTdIMTUwLjMwN1Y4NC4zODUzTDE1MC4zMDUgODQuMzgzNVoiIGZpbGw9ImJsYWNrIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMTI0MDVfNzU0MiI+CjxyZWN0IHdpZHRoPSIxODciIGhlaWdodD0iODgiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==" alt="Valle Benedetta">
+      </a>
+      <div class="footer-links">
+        <a href="#percorso">Il percorso</a>
+        <a href="#contesto">La location</a>
+        <a href="#cucina">La cucina</a>
+        <a href="#programma">Programma</a>
+        <a href="#insegnante">L'insegnante</a>
+        <a href="#recensioni">Le recensioni</a>
+        <a href="#partecipazione">I costi</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Contatti</div>
+      <ul class="footer-contact">
+        <li><a href="tel:+393513114576">+39 351 311 4576</a></li>
+        <li><a href="mailto:info@vallebenedetta.org">info@vallebenedetta.org</a></li>
+        <li><a href="https://maps.app.goo.gl/zx15ma89GF6kVJdn7" target="_blank" rel="noopener">Trovaci nella mappa</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Social</div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/vallebenedetta_retreatcenter" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61571434321292" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h-2a2 2 0 0 0-2 2v10M9 13h6"/><path d="M15 3H7a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/valle-benedetta-retreat-center/" target="_blank" rel="noopener" aria-label="Linkedin">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="7.5" y1="10" x2="7.5" y2="17"/><circle cx="7.5" cy="6.8" r="0.6" fill="currentColor" stroke="none"/><path d="M11.5 17v-4a2.2 2.2 0 0 1 4.4 0v4"/><line x1="11.5" y1="10" x2="11.5" y2="17"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom wrap" style="padding-left:0;padding-right:0;">
+    <span>Valle Benedetta, vicino a Livorno, Toscana.</span>
+    <div class="footer-legal">
+      <a href="https://vallebenedetta.org/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+      <a href="https://vallebenedetta.org/cookie-policy/" target="_blank" rel="noopener">Cookie policy</a>
+      <a href="https://vallebenedetta.org/ritiri-ed-eventi/leadership-naturale/#">Preferenze Cookie</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  function smoothScrollBy(el, delta, duration){
+    const start = el.scrollLeft;
+    const startTime = performance.now();
+    const ease = t => t<0.5 ? 2*t*t : -1+(4-2*t)*t;
+    function step(now){
+      const t = Math.min(1, (now - startTime) / duration);
+      el.scrollLeft = start + delta * ease(t);
+      if(t < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  function wireCarousel(trackId, prevId, nextId, duration){
+    const track = document.getElementById(trackId);
+    const prev = document.getElementById(prevId);
+    const next = document.getElementById(nextId);
+    if(!track) return;
+    const scrollByCard = () => {
+      const card = track.querySelector(':scope > *');
+      if(!card) return track.clientWidth;
+      const style = getComputedStyle(track);
+      const gap = parseFloat(style.columnGap || style.gap || 24);
+      return card.getBoundingClientRect().width + gap;
+    };
+    if(duration){
+      prev.addEventListener('click', () => smoothScrollBy(track, -scrollByCard(), duration));
+      next.addEventListener('click', () => smoothScrollBy(track, scrollByCard(), duration));
+    } else {
+      prev.addEventListener('click', () => track.scrollBy({left:-scrollByCard(), behavior:'smooth'}));
+      next.addEventListener('click', () => track.scrollBy({left:scrollByCard(), behavior:'smooth'}));
+    }
+  }
+  wireCarousel('reviewCarousel','reviewPrev','reviewNext');
+  wireCarousel('placeCarousel','placePrev','placeNext', 1200);
+  wireCarousel('videoCarousel','videoPrev','videoNext');
+
+  document.querySelectorAll('.review-card .read-more').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.review-card');
+      const expanded = card.classList.toggle('expanded');
+      btn.textContent = expanded ? 'Leggi meno' : 'Leggi tutto';
+    });
+  });
+</script>
+
+</body>
+</html>
